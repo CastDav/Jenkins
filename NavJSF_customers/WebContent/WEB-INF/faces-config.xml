@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+	<!-- Navigation rules -->
+
+	<navigation-rule>
+		<description>List of customers</description>
+		<from-view-id>/listCustomers.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listPedidosVenta</from-outcome>
+			<to-view-id>/listPedidosVenta.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- Navigation rules -->
+
+	<navigation-rule>
+		<description>List of Proveedores</description>
+		<from-view-id>/listProveedores.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listPedidosCompra</from-outcome>
+			<to-view-id>/listPedidosCompraPorProveedor.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+
+
+
+	<navigation-rule>
+		<description>List of books</description>
+		<from-view-id>/listBooks.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>editBook</from-outcome>
+			<to-view-id>/editBook.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<description>Add or edit a book</description>
+		<from-view-id>/editBook.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listBooks</from-outcome>
+			<to-view-id>/listBooks.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+      <from-view-id>/index.jsp</from-view-id>
+      <navigation-case>
+         <from-outcome>loginSuccessCliente</from-outcome>
+         <to-view-id>/welcomeCliente.jsp</to-view-id>
+      </navigation-case>
+      <navigation-case>
+         <from-outcome>loginSuccessComercial</from-outcome>
+         <to-view-id>/welcomeComercial.jsp</to-view-id>
+      </navigation-case>
+      <navigation-case>
+         <from-outcome>loginFailure</from-outcome>
+         <to-view-id>/sorry.jsp</to-view-id>
+      </navigation-case>
+      <navigation-case>
+         <from-outcome>internalError</from-outcome>
+         <to-view-id>/error.jsp</to-view-id>
+      </navigation-case>
+   </navigation-rule>
+   
+   <navigation-rule>
+      <from-view-id>/welcomeCliente.jsp</from-view-id>
+      <navigation-case>
+         <from-outcome>login</from-outcome>
+         <to-view-id>/index.jsp</to-view-id>
+      </navigation-case>
+   </navigation-rule>
+   
+   <navigation-rule>
+      <from-view-id>/welcomeComercial.jsp</from-view-id>
+      <navigation-case>
+         <from-outcome>login</from-outcome>
+         <to-view-id>/index.jsp</to-view-id>
+      </navigation-case>
+   </navigation-rule>
+   
+   
+	<navigation-rule>
+		<from-view-id>/sorry.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/error.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+	<!-- Managed beans -->
+	<managed-bean>
+		<description>
+			Book bean
+		</description>
+		<managed-bean-name>bookBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.Book</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<description>
+			BookList Bean
+		</description>
+		<managed-bean-name>bookListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.BookList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- Beans añadidos para el NAV WS Customer -->
+	<managed-bean>
+		<description>
+			Customer bean
+		</description>
+		<managed-bean-name>customerBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.customer.Customer</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<description>
+			CustomerList Bean
+		</description>
+		<managed-bean-name>customerListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.CustomerList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>user</managed-bean-name>
+		<managed-bean-class>com.ual.ais.UserBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>proveedorListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.SupplierList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>proveedorBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.supplier.Supplier</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>productosListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.ProductList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>productosBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.product.Product</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidosVentaListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.PedidosVentaList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidosVentaBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.orderinformation.OrderInformation</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidosCompraListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.PedidosCompraList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidosCompraBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.purchaseorder.PurchaseOrder</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidocompraproveedorList</managed-bean-name>
+		<managed-bean-class>com.ual.ais.PedidocompraproveedorList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pedidosVentaListAbiertoListBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.PedidosVentaListAbierto</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+</faces-config>
