@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13536319176290" configfile="/NavJSF_customersgooglecode/WebContent/WEB-INF/faces-config.xml">
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13536319176290" configfile="/NavJSF_customers/WebContent/WEB-INF/faces-config.xml">
   <nodes xsi:type="pageflow:PFPage" name="listBooks" comment="List of books" x="338" y="178" id="pf13536319283451" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf13536319283452" inlinks="pf13536319283453" path="/listBooks.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="editBook" x="122" y="178" id="pf13536319283454" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13536319283453" inlinks="pf13536319283452" path="/editBook.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="index" x="338" y="946" id="pf13538827024500" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" outlinks="pf13538827024502 pf13538827024503 pf13997217182040 pf13997217182041" inlinks="pf13538827024505 pf13538827024506" path="/index.jsp"/>
@@ -11,14 +11,14 @@
   <nodes xsi:type="pageflow:PFPage" name="listPedidosCompraPorProveedor" x="338" y="2101" id="pf13978934527168" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13978934527167" path="/listPedidosCompraPorProveedor.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="welcomeCliente" x="554" y="754" id="pf13997217182042" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" inlinks="pf13997217182040" path="/welcomeCliente.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="welcomeComercial" x="554" y="1138" id="pf13997217182043" referenceLink="//@navigationRule.4/@navigationCase.1/@toViewId|" inlinks="pf13997217182041" path="/welcomeComercial.jsp"/>
-  <links id="pf13536319283452" target="pf13536319283454" source="pf13536319283451" outcome="editBook"/>
-  <links id="pf13536319283453" target="pf13536319283451" source="pf13536319283454" outcome="listBooks" redirect="true"/>
-  <links id="pf13538827024502" target="pf13538827024518" source="pf13538827024500" outcome="loginFailure"/>
-  <links id="pf13538827024503" target="pf13538827024519" source="pf13538827024500" outcome="internalError"/>
-  <links id="pf13538827024505" target="pf13538827024500" source="pf13538827024518" outcome="login"/>
-  <links id="pf13538827024506" target="pf13538827024500" source="pf13538827024519" outcome="login"/>
-  <links id="pf13974645250811" target="pf13974645250800" source="pf13968911175887" outcome="listPedidosVenta"/>
-  <links id="pf13978934527167" target="pf13978934527168" source="pf13978934527166" outcome="listPedidosCompra"/>
-  <links id="pf13997217182040" target="pf13997217182042" source="pf13538827024500" outcome="loginSuccessCliente"/>
-  <links id="pf13997217182041" target="pf13997217182043" source="pf13538827024500" outcome="loginSuccessComercial"/>
+  <links id="pf13536319283452" target="pf13536319283454" source="pf13536319283451"/>
+  <links id="pf13536319283453" target="pf13536319283451" source="pf13536319283454"/>
+  <links id="pf13538827024502" target="pf13538827024518" source="pf13538827024500"/>
+  <links id="pf13538827024503" target="pf13538827024519" source="pf13538827024500"/>
+  <links id="pf13538827024505" target="pf13538827024500" source="pf13538827024518"/>
+  <links id="pf13538827024506" target="pf13538827024500" source="pf13538827024519"/>
+  <links id="pf13974645250811" target="pf13974645250800" source="pf13968911175887"/>
+  <links id="pf13978934527167" target="pf13978934527168" source="pf13978934527166"/>
+  <links id="pf13997217182040" target="pf13997217182042" source="pf13538827024500"/>
+  <links id="pf13997217182041" target="pf13997217182043" source="pf13538827024500"/>
 </pageflow:Pageflow>
