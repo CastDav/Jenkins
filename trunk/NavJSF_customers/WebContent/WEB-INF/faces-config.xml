@@ -101,6 +101,18 @@
 		</navigation-case>
 	</navigation-rule>
 
+	<!-- Navigation rules Nuevo Cliente-->
+	<navigation-rule>
+		<description>Nuevo Cliente</description>
+		<from-view-id>/nuevoCliente.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>welcomeComercial</from-outcome>
+			<to-view-id>/welcomComercial.jsp</to-view-id>
+		
+		</navigation-case>
+	</navigation-rule>
+
+
 
 	<!-- Managed beans -->
 	<managed-bean>
@@ -193,6 +205,11 @@
 	<managed-bean>
 		<managed-bean-name>pedidosVentaListAbiertoListBean</managed-bean-name>
 		<managed-bean-class>com.ual.ais.PedidosVentaListAbierto</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>nuevoClienteBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.NuevoCliente</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 

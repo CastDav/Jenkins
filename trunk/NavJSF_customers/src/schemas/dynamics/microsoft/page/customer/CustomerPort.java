@@ -7,6 +7,7 @@ import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.ws.Holder;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -97,6 +98,64 @@ public interface CustomerPort {
     @RequestWrapper(localName = "GetRecIdFromKey", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.GetRecIdFromKey")
     @ResponseWrapper(localName = "GetRecIdFromKey_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.GetRecIdFromKeyResult")
     public String getRecIdFromKey(
+        @WebParam(name = "Key", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer")
+        String key);
+
+    /**
+     * 
+     * @param customer
+     */
+    @WebMethod(operationName = "Create", action = "urn:microsoft-dynamics-schemas/page/customer:Create")
+    @RequestWrapper(localName = "Create", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.Create")
+    @ResponseWrapper(localName = "Create_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.CreateResult")
+    public void create(
+        @WebParam(name = "Customer", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", mode = WebParam.Mode.INOUT)
+        Holder<Customer> customer);
+
+    /**
+     * 
+     * @param customerList
+     */
+    @WebMethod(operationName = "CreateMultiple", action = "urn:microsoft-dynamics-schemas/page/customer:CreateMultiple")
+    @RequestWrapper(localName = "CreateMultiple", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.CreateMultiple")
+    @ResponseWrapper(localName = "CreateMultiple_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.CreateMultipleResult")
+    public void createMultiple(
+        @WebParam(name = "Customer_List", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", mode = WebParam.Mode.INOUT)
+        Holder<CustomerList> customerList);
+
+    /**
+     * 
+     * @param customer
+     */
+    @WebMethod(operationName = "Update", action = "urn:microsoft-dynamics-schemas/page/customer:Update")
+    @RequestWrapper(localName = "Update", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.Update")
+    @ResponseWrapper(localName = "Update_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.UpdateResult")
+    public void update(
+        @WebParam(name = "Customer", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", mode = WebParam.Mode.INOUT)
+        Holder<Customer> customer);
+
+    /**
+     * 
+     * @param customerList
+     */
+    @WebMethod(operationName = "UpdateMultiple", action = "urn:microsoft-dynamics-schemas/page/customer:UpdateMultiple")
+    @RequestWrapper(localName = "UpdateMultiple", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.UpdateMultiple")
+    @ResponseWrapper(localName = "UpdateMultiple_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.UpdateMultipleResult")
+    public void updateMultiple(
+        @WebParam(name = "Customer_List", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", mode = WebParam.Mode.INOUT)
+        Holder<CustomerList> customerList);
+
+    /**
+     * 
+     * @param key
+     * @return
+     *     returns boolean
+     */
+    @WebMethod(operationName = "Delete", action = "urn:microsoft-dynamics-schemas/page/customer:Delete")
+    @WebResult(name = "Delete_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer")
+    @RequestWrapper(localName = "Delete", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.Delete")
+    @ResponseWrapper(localName = "Delete_Result", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer", className = "schemas.dynamics.microsoft.page.customer.DeleteResult")
+    public boolean delete(
         @WebParam(name = "Key", targetNamespace = "urn:microsoft-dynamics-schemas/page/customer")
         String key);
 
