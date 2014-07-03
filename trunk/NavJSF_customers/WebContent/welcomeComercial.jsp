@@ -16,7 +16,8 @@
 
 <!-- begin CSS -->
 <link href="css/style.css" type="text/css" rel="stylesheet">
-<link href="css/html5-reset.css" type="text/css" rel="stylesheet">
+
+
 <!-- end CSS -->
 
 <!-- begin JS -->
@@ -58,6 +59,9 @@
 							De Pedidos Compra</a></li>
 			
 					<li><a
+						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
+							De Pedidos Ventas Abiertos</a></li>
+						<li><a
 						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
 							De Pedidos Ventas Abiertos</a></li>
 

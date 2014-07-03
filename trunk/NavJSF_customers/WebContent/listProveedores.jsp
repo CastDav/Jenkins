@@ -12,7 +12,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <base href="<%=basePath%>">
 
-<title>List of Customers</title>
+<title>Lista de Proveedores</title>
 </head>
 <!-- begin CSS -->
 <link href="css/style.css" type="text/css" rel="stylesheet">

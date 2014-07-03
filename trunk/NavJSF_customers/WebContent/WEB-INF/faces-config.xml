@@ -111,6 +111,16 @@
 		
 		</navigation-case>
 	</navigation-rule>
+	<!-- Navigation rules Editar Cliente-->
+	<navigation-rule>
+		<description>Editar Cliente</description>
+		<from-view-id>/modificarCliente.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>welcomeComercial</from-outcome>
+			<to-view-id>/welcomComercial.jsp</to-view-id>
+		
+		</navigation-case>
+	</navigation-rule>
 
 
 
@@ -210,6 +220,11 @@
 	<managed-bean>
 		<managed-bean-name>nuevoClienteBean</managed-bean-name>
 		<managed-bean-class>com.ual.ais.NuevoCliente</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>modificarClienteBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.ModificarCliente</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 
