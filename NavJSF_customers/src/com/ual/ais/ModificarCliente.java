@@ -1,5 +1,6 @@
 package com.ual.ais;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.net.*; 
 
@@ -10,26 +11,32 @@ import javax.xml.namespace.QName;
 
 import javax.xml.ws.Holder;
 
-import schemas.dynamics.microsoft.codeunit.serienextid.SerieNextId;
-import schemas.dynamics.microsoft.codeunit.serienextid.SerieNextIdPort;
 import schemas.dynamics.microsoft.nav.system.*; 
 import schemas.dynamics.microsoft.page.customer.*; 
 
 
 
-public class NuevoCliente {
+public class ModificarCliente {
 
 	// ------------------------- Properties ---------------------------
 	private schemas.dynamics.microsoft.page.customer.Customer customer;
+	private String nocliente;
 	private CustomerPort customerPort;
-	private SerieNextIdPort nextIdPort;
-	SerieNextId serieService;
 	// ------------------------- Getter and Setter --------------------
 
-	public NuevoCliente(){
-		loadClienteFromNAVWS();
-		customer= new Customer();
+	public ModificarCliente(){
+		//loadClienteFromNAVWS();
 	}
+	
+	public void selectCliente(ActionEvent event){
+		UIParameter component = (UIParameter) event.getComponent().findComponent("clienteNo");
+		
+		this.nocliente=component.getValue().toString();
+
+		loadClienteFromNAVWS();
+		
+	}
+	
 	
 	/**
 	 * @return collection of customers
@@ -51,13 +58,22 @@ public class NuevoCliente {
   		  String cur = companies.get(0); 
   		  URL customerPageURL = new URL(baseURL+URLEncoder.encode(cur,"UTF-8").replace("+","%20")+"/Page/Customer"); 
   		  QName customerPageQName = new QName("urn:microsoft-dynamics-schemas/page/customer", "Customer_Service"); 
+
+  		  
   		  CustomerService customerService = new CustomerService(customerPageURL, customerPageQName); 
-		  customerPort = customerService.getCustomerPort();
+  		  customerPort = customerService.getCustomerPort();
+  		  
+  		  // Añadimos un filtro de ejemplo 
+  		  List<CustomerFilter> filters = new ArrayList<CustomerFilter>();
+  		  CustomerFilter filter1 = new CustomerFilter(); 
+		  filter1.setField(CustomerFields.fromValue("No")); 
+		  //System.out.println(this.nocliente);
+		  filter1.setCriteria(this.nocliente);
+		  filters.add(filter1);
+
 		  
-		  
-  		  URL codeunitURL = new URL( baseURL+URLEncoder.encode(cur,"UTF8").replace("+","%20") +"/Codeunit/serieNextId");
-  		  QName codeunitQName = new QName("urn:microsoft-dynamics-schemas/codeunit/serieNextId", "serieNextId");
-  		  serieService = new SerieNextId (codeunitURL, codeunitQName); 
+		  schemas.dynamics.microsoft.page.customer.CustomerList customerWSList = customerPort.readMultiple(filters, null, 0);
+  		  customer = customerWSList.getCustomer().get(0);
 		}
   		catch (Exception e) {
 			// TODO: handle exception
@@ -65,34 +81,23 @@ public class NuevoCliente {
 		
 	}
 	public void guardarCliente (ActionEvent event){
-		
-		
-		
 		UIParameter name = (UIParameter) event.getComponent().findComponent("nameCamb");
 		UIParameter contact = (UIParameter) event.getComponent().findComponent("contactCamb");
 		UIParameter tel = (UIParameter) event.getComponent().findComponent("telCamb");
 		UIParameter fax = (UIParameter) event.getComponent().findComponent("faxCamb");
 		UIParameter cp = (UIParameter) event.getComponent().findComponent("codpostalCamb");
 		
-		nextIdPort = serieService.getSerieNextIdPort();
-		String serieName = "CLIE"; // nombre de la serie de Cliente
-		String siguiente = nextIdPort.getNextNoSerie(serieName); 
-		System.out.println("Siguiente: ");
-		System.out.println(siguiente);
+		customer.setName(name.getValue().toString());
+		customer.setContact(contact.getValue().toString());
+		customer.setPhoneNo(tel.getValue().toString());
+		customer.setFaxNo(fax.getValue().toString());
+		customer.setPostCode(cp.getValue().toString());
 		
-		Customer custom=new Customer();
-		custom.setName(name.getValue().toString());
-		custom.setContact(contact.getValue().toString());
-		custom.setPhoneNo(tel.getValue().toString());
-		custom.setFaxNo(fax.getValue().toString());
-		custom.setPostCode(cp.getValue().toString());
-		
-		Holder<Customer> hce = new Holder<Customer>(custom); 
-		customerPort.create(hce);
+		Holder<Customer> hc = new Holder<Customer>(customer); 
+		customerPort.update(hc);
 		
 	}
 
 	
 
 }
-

@@ -73,23 +73,23 @@
 			
 			<h:outputText value="Nombre:" />
 			<h:inputText id="name" 
-						 value="#{nuevoClienteBean.customers.name}">
+						 value="#{modificarClienteBean.customers.name}">
 			</h:inputText>
 			<h:outputText value="Contacto:" />
 			<h:inputText id="contact" 
-						 value="#{nuevoClienteBean.customers.contact}">
+						 value="#{modificarClienteBean.customers.contact}">
 			</h:inputText>
 			<h:outputText value="Teléfono:" />
 			<h:inputText id="telephone" 
-						 value="#{nuevoClienteBean.customers.phoneNo}">
+						 value="#{modificarClienteBean.customers.phoneNo}">
 			</h:inputText>
 			<h:outputText value="Fax:" />
 			<h:inputText id="fax" 
-						 value="#{nuevoClienteBean.customers.faxNo}">
+						 value="#{modificarClienteBean.customers.faxNo}">
 			</h:inputText>
 			<h:outputText value="Código Postal:" />
 			<h:inputText id="codPostal" 
-						 value="#{nuevoClienteBean.customers.postCode}">
+						 value="#{modificarClienteBean.customers.postCode}">
 			</h:inputText>
 		    
 		</h:panelGrid>
@@ -101,14 +101,13 @@
 		<h:commandButton id="listListNuevo" 
 						 value="Guardar"
 		    			   action="nada" 
-		    			   actionListener="#{nuevoClienteBean.guardarCliente}">
+		    			   actionListener="#{modificarClienteBean.guardarCliente}">
 		    			   
-		    	<f:param id="nameCamb" value="#{nuevoClienteBean.customers.name}" />
-		    	<f:param id="contactCamb" value="#{nuevoClienteBean.customers.contact}" />
-		    	<f:param id="telCamb" value="#{nuevoClienteBean.customers.phoneNo}" />
-		    	<f:param id="faxCamb" value="#{nuevoClienteBean.customers.faxNo}" />
-		    	<f:param id="codpostalCamb" value="#{nuevoClienteBean.customers.postCode}" />
-		    
+		    	<f:param id="nameCamb" value="#{modificarClienteBean.customers.name}" />
+		    	<f:param id="contactCamb" value="#{modificarClienteBean.customers.contact}" />
+		    	<f:param id="telCamb" value="#{modificarClienteBean.customers.phoneNo}" />
+		    	<f:param id="faxCamb" value="#{modificarClienteBean.customers.faxNo}" />
+		    	<f:param id="codpostalCamb" value="#{modificarClienteBean.customers.postCode}" />
 		    	
 		    </h:commandButton>
 		</h:form>
