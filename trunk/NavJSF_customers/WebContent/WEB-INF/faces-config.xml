@@ -27,7 +27,23 @@
 	</navigation-rule>
 
 
-
+	<navigation-rule>
+		<description>List of customers</description>
+		<from-view-id>/listCustomers.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>modificarCliente</from-outcome>
+			<to-view-id>/modificarCliente.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<description>Volver de modificar</description>
+		<from-view-id>/modificarCliente.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listCustomers</from-outcome>
+			<to-view-id>/listCustomers.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 
 	<navigation-rule>

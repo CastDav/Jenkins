@@ -38,37 +38,24 @@
 		</h:form>
 
 		<header>
-			<!-- begin navigation -->
-			<nav id="navigationComercial">
+				<!-- MENU COMERCIAL-->
+			<nav id="navigation">
 				<ul>
 					<li><a href="#">Inicio</a></li>
-					<li><a
-						href="listCustomers.jsf">Lista
-							De Clientes</a></li>
-					<li><a
-						href="listCustomers.jsf">Nuevo Clientes</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista
-							De Productos</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProveedores.jsf">Lista
-							De Proveedores</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosCompra.jsf">Lista
-							De Pedidos Compra</a></li>
-			
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
-							De Pedidos Ventas Abiertos</a></li>
-
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Consultar productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/consularPedidos.jsf">Consultar pedidos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/modificarCliente.jsf">Modificar cliente</a></li>
 				</ul>
-			
+	
 			</nav>
+	<!-- end navigation -->
 			<!-- end navigation -->
 			</header>
 		<div class="cuerpo">
 		<h:form id="formCliente">
-		<h:inputHidden id="id"/>
+		<h:inputHidden id="id" value="#{modificarClienteBean.customers.name}"/>
 		<h:panelGrid columns="2" border="1">
 			
 			<h:outputText value="Nombre:" />
@@ -100,7 +87,7 @@
 					
 		<h:commandButton id="listListNuevo" 
 						 value="Guardar"
-		    			   action="nada" 
+		    			   action="listCustomers" 
 		    			   actionListener="#{modificarClienteBean.guardarCliente}">
 		    			   
 		    	<f:param id="nameCamb" value="#{modificarClienteBean.customers.name}" />
