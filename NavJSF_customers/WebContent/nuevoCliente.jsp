@@ -38,7 +38,7 @@
 		</h:form>
 
 		<header>
-			<!-- begin navigation -->
+				<!-- begin navigation -->
 			<nav id="navigationComercial">
 				<ul>
 					<li><a href="#">Inicio</a></li>

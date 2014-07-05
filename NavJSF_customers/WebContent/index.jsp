@@ -7,10 +7,10 @@
 <title><h:outputText value="#{msgs.title}" /></title>
 	</head>
 	<body style="background: url(images/bgnoise_lg.png) repeat left top;">
+	<h1 id="titulo"> La Vega </h1>
 		<h:form>
-			<h1>
-				<h:outputText value="#{msgs.enterNameAndPassword}" />
-			</h1>
+		<h3>
+				<h:outputText value="#{msgs.enterNameAndPassword}" /></h3>
 			<h:panelGrid columns="2">
 				<h:outputText value="#{msgs.name}" />
 				<h:inputText value="#{user.name}" />

@@ -105,12 +105,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<f:facet name="header">
 						<h:outputText value="Edit" />
 					</f:facet>
-				</h:column>
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="Delete" />
-					</f:facet>
-				</h:column>
+				 <h:commandLink id="editareditar" 
+		    			   action="modificarCliente" 
+		    			   actionListener="#{modificarClienteBean.selectCliente}">
+		    	<h:outputText value="Editar" />
+		    	<f:param id="clienteNo" 
+		    			 name="id" 
+		    			 value="#{customer.no}" />
+		    </h:commandLink>
+		  </h:column>
+				
 			</h:dataTable>
 		</h:form>
 	</f:view>

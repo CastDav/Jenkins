@@ -41,31 +41,19 @@
 
 		
 
+			
 			<!-- begin navigation -->
+				<!-- MENU CLIENTE-->
 			<nav id="navigation">
 				<ul>
 					<li><a href="#">Inicio</a></li>
-					<li><a
-						href="listCustomers.jsf">Lista
-							De Clientes</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista
-							De Productos</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProveedores.jsf">Lista
-							De Proveedores</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosCompra.jsf">Lista
-							De Pedidos Compra</a></li>
-			
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
-							De Pedidos Ventas Abiertos</a></li>
-
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista De Productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/carrito.jsf">Carrito</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/consultarCompras.jsf">Consultar Compras</a></li>
 				</ul>
-			
+	
 			</nav>
-			<!-- end navigation -->
+	<!-- end navigation -->
 
 		</div>
 	</body>
