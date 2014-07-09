@@ -26,7 +26,7 @@
 	</head>
 	<body style="background: url(images/bgnoise_lg.png) repeat left top;">
 		<div id="container">
-		<h:form>
+		<h:form> 
 			<p>
 				<h:outputText value="#{msgs.welcome}" />
 				<h:outputText value="#{user.name}" />
