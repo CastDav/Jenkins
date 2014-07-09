@@ -59,9 +59,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="Lead_Time_Calculation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Manufacturing_Policy" type="{urn:microsoft-dynamics-schemas/page/product}Manufacturing_Policy" minOccurs="0"/>
  *         &lt;element name="Flushing_Method" type="{urn:microsoft-dynamics-schemas/page/product}Flushing_Method" minOccurs="0"/>
- *         &lt;element name="_x003C_qtyOnSalesOrder_x003E_" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="_x003C_qtyOnPurchOrder_x003E_" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="_x003C_Inventory_x003E_" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="qtyOnSalesOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="qtyOnPurchOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="Inventory" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="Item_Tracking_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -112,9 +112,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "leadTimeCalculation",
     "manufacturingPolicy",
     "flushingMethod",
-    "x003CQtyOnSalesOrderX003E",
-    "x003CQtyOnPurchOrderX003E",
-    "x003CInventoryX003E",
+    "qtyOnSalesOrder",
+    "qtyOnPurchOrder",
+    "inventory",
     "itemTrackingCode"
 })
 public class Product {
@@ -198,12 +198,10 @@ public class Product {
     protected ManufacturingPolicy manufacturingPolicy;
     @XmlElement(name = "Flushing_Method")
     protected FlushingMethod flushingMethod;
-    @XmlElement(name = "_x003C_qtyOnSalesOrder_x003E_")
-    protected BigDecimal x003CQtyOnSalesOrderX003E;
-    @XmlElement(name = "_x003C_qtyOnPurchOrder_x003E_")
-    protected BigDecimal x003CQtyOnPurchOrderX003E;
-    @XmlElement(name = "_x003C_Inventory_x003E_")
-    protected BigDecimal x003CInventoryX003E;
+    protected BigDecimal qtyOnSalesOrder;
+    protected BigDecimal qtyOnPurchOrder;
+    @XmlElement(name = "Inventory")
+    protected BigDecimal inventory;
     @XmlElement(name = "Item_Tracking_Code")
     protected String itemTrackingCode;
 
@@ -1144,75 +1142,75 @@ public class Product {
     }
 
     /**
-     * Gets the value of the x003CQtyOnSalesOrderX003E property.
+     * Gets the value of the qtyOnSalesOrder property.
      * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
      *     
      */
-    public BigDecimal getX003CQtyOnSalesOrderX003E() {
-        return x003CQtyOnSalesOrderX003E;
+    public BigDecimal getQtyOnSalesOrder() {
+        return qtyOnSalesOrder;
     }
 
     /**
-     * Sets the value of the x003CQtyOnSalesOrderX003E property.
+     * Sets the value of the qtyOnSalesOrder property.
      * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
      *     
      */
-    public void setX003CQtyOnSalesOrderX003E(BigDecimal value) {
-        this.x003CQtyOnSalesOrderX003E = value;
+    public void setQtyOnSalesOrder(BigDecimal value) {
+        this.qtyOnSalesOrder = value;
     }
 
     /**
-     * Gets the value of the x003CQtyOnPurchOrderX003E property.
+     * Gets the value of the qtyOnPurchOrder property.
      * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
      *     
      */
-    public BigDecimal getX003CQtyOnPurchOrderX003E() {
-        return x003CQtyOnPurchOrderX003E;
+    public BigDecimal getQtyOnPurchOrder() {
+        return qtyOnPurchOrder;
     }
 
     /**
-     * Sets the value of the x003CQtyOnPurchOrderX003E property.
+     * Sets the value of the qtyOnPurchOrder property.
      * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
      *     
      */
-    public void setX003CQtyOnPurchOrderX003E(BigDecimal value) {
-        this.x003CQtyOnPurchOrderX003E = value;
+    public void setQtyOnPurchOrder(BigDecimal value) {
+        this.qtyOnPurchOrder = value;
     }
 
     /**
-     * Gets the value of the x003CInventoryX003E property.
+     * Gets the value of the inventory property.
      * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
      *     
      */
-    public BigDecimal getX003CInventoryX003E() {
-        return x003CInventoryX003E;
+    public BigDecimal getInventory() {
+        return inventory;
     }
 
     /**
-     * Sets the value of the x003CInventoryX003E property.
+     * Sets the value of the inventory property.
      * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
      *     
      */
-    public void setX003CInventoryX003E(BigDecimal value) {
-        this.x003CInventoryX003E = value;
+    public void setInventory(BigDecimal value) {
+        this.inventory = value;
     }
 
     /**
