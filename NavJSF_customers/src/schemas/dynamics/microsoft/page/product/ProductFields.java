@@ -52,6 +52,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Lead_Time_Calculation"/>
  *     &lt;enumeration value="Manufacturing_Policy"/>
  *     &lt;enumeration value="Flushing_Method"/>
+ *     &lt;enumeration value="_x003C_qtyOnSalesOrder_x003E_"/>
+ *     &lt;enumeration value="_x003C_qtyOnPurchOrder_x003E_"/>
+ *     &lt;enumeration value="_x003C_Inventory_x003E_"/>
  *     &lt;enumeration value="Item_Tracking_Code"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -138,6 +141,12 @@ public enum ProductFields {
     MANUFACTURING_POLICY("Manufacturing_Policy"),
     @XmlEnumValue("Flushing_Method")
     FLUSHING_METHOD("Flushing_Method"),
+    @XmlEnumValue("_x003C_qtyOnSalesOrder_x003E_")
+    X_003_C_QTY_ON_SALES_ORDER_X_003_E("_x003C_qtyOnSalesOrder_x003E_"),
+    @XmlEnumValue("_x003C_qtyOnPurchOrder_x003E_")
+    X_003_C_QTY_ON_PURCH_ORDER_X_003_E("_x003C_qtyOnPurchOrder_x003E_"),
+    @XmlEnumValue("_x003C_Inventory_x003E_")
+    X_003_C_INVENTORY_X_003_E("_x003C_Inventory_x003E_"),
     @XmlEnumValue("Item_Tracking_Code")
     ITEM_TRACKING_CODE("Item_Tracking_Code");
     private final String value;
