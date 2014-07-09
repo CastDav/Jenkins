@@ -11,9 +11,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for Purchase_Order_Line complex type.
+ * <p>Clase Java para Purchase_Order_Line complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="Purchase_Order_Line">
@@ -190,6 +190,7 @@ public class PurchaseOrderLine {
     @XmlElement(name = "Key")
     protected String key;
     @XmlElement(name = "Type")
+    @XmlSchemaType(name = "string")
     protected Type type;
     @XmlElement(name = "No")
     protected String no;
@@ -198,6 +199,7 @@ public class PurchaseOrderLine {
     @XmlElement(name = "IC_Partner_Code")
     protected String icPartnerCode;
     @XmlElement(name = "IC_Partner_Ref_Type")
+    @XmlSchemaType(name = "string")
     protected ICPartnerRefType icPartnerRefType;
     @XmlElement(name = "IC_Partner_Reference")
     protected String icPartnerReference;
@@ -272,6 +274,7 @@ public class PurchaseOrderLine {
     @XmlElement(name = "Job_Task_No")
     protected String jobTaskNo;
     @XmlElement(name = "Job_Line_Type")
+    @XmlSchemaType(name = "string")
     protected JobLineType jobLineType;
     @XmlElement(name = "Job_Unit_Price")
     protected BigDecimal jobUnitPrice;
@@ -309,6 +312,7 @@ public class PurchaseOrderLine {
     @XmlElement(name = "Lead_Time_Calculation")
     protected String leadTimeCalculation;
     @XmlElement(name = "Planning_Flexibility")
+    @XmlSchemaType(name = "string")
     protected PlanningFlexibility planningFlexibility;
     @XmlElement(name = "Prod_Order_No")
     protected String prodOrderNo;
@@ -348,7 +352,7 @@ public class PurchaseOrderLine {
     protected String shortcutDimCodeX005B8X005D;
 
     /**
-     * Gets the value of the key property.
+     * Obtiene el valor de la propiedad key.
      * 
      * @return
      *     possible object is
@@ -360,7 +364,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the key property.
+     * Define el valor de la propiedad key.
      * 
      * @param value
      *     allowed object is
@@ -372,7 +376,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the type property.
+     * Obtiene el valor de la propiedad type.
      * 
      * @return
      *     possible object is
@@ -384,7 +388,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the type property.
+     * Define el valor de la propiedad type.
      * 
      * @param value
      *     allowed object is
@@ -396,7 +400,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the no property.
+     * Obtiene el valor de la propiedad no.
      * 
      * @return
      *     possible object is
@@ -408,7 +412,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the no property.
+     * Define el valor de la propiedad no.
      * 
      * @param value
      *     allowed object is
@@ -420,7 +424,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the crossReferenceNo property.
+     * Obtiene el valor de la propiedad crossReferenceNo.
      * 
      * @return
      *     possible object is
@@ -432,7 +436,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the crossReferenceNo property.
+     * Define el valor de la propiedad crossReferenceNo.
      * 
      * @param value
      *     allowed object is
@@ -444,7 +448,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the icPartnerCode property.
+     * Obtiene el valor de la propiedad icPartnerCode.
      * 
      * @return
      *     possible object is
@@ -456,7 +460,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the icPartnerCode property.
+     * Define el valor de la propiedad icPartnerCode.
      * 
      * @param value
      *     allowed object is
@@ -468,7 +472,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the icPartnerRefType property.
+     * Obtiene el valor de la propiedad icPartnerRefType.
      * 
      * @return
      *     possible object is
@@ -480,7 +484,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the icPartnerRefType property.
+     * Define el valor de la propiedad icPartnerRefType.
      * 
      * @param value
      *     allowed object is
@@ -492,7 +496,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the icPartnerReference property.
+     * Obtiene el valor de la propiedad icPartnerReference.
      * 
      * @return
      *     possible object is
@@ -504,7 +508,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the icPartnerReference property.
+     * Define el valor de la propiedad icPartnerReference.
      * 
      * @param value
      *     allowed object is
@@ -516,7 +520,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the variantCode property.
+     * Obtiene el valor de la propiedad variantCode.
      * 
      * @return
      *     possible object is
@@ -528,7 +532,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the variantCode property.
+     * Define el valor de la propiedad variantCode.
      * 
      * @param value
      *     allowed object is
@@ -540,7 +544,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the nonstock property.
+     * Obtiene el valor de la propiedad nonstock.
      * 
      * @return
      *     possible object is
@@ -552,7 +556,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the nonstock property.
+     * Define el valor de la propiedad nonstock.
      * 
      * @param value
      *     allowed object is
@@ -564,7 +568,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the vatProdPostingGroup property.
+     * Obtiene el valor de la propiedad vatProdPostingGroup.
      * 
      * @return
      *     possible object is
@@ -576,7 +580,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the vatProdPostingGroup property.
+     * Define el valor de la propiedad vatProdPostingGroup.
      * 
      * @param value
      *     allowed object is
@@ -588,7 +592,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the description property.
+     * Obtiene el valor de la propiedad description.
      * 
      * @return
      *     possible object is
@@ -600,7 +604,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the description property.
+     * Define el valor de la propiedad description.
      * 
      * @param value
      *     allowed object is
@@ -612,7 +616,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the dropShipment property.
+     * Obtiene el valor de la propiedad dropShipment.
      * 
      * @return
      *     possible object is
@@ -624,7 +628,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the dropShipment property.
+     * Define el valor de la propiedad dropShipment.
      * 
      * @param value
      *     allowed object is
@@ -636,7 +640,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the returnReasonCode property.
+     * Obtiene el valor de la propiedad returnReasonCode.
      * 
      * @return
      *     possible object is
@@ -648,7 +652,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the returnReasonCode property.
+     * Define el valor de la propiedad returnReasonCode.
      * 
      * @param value
      *     allowed object is
@@ -660,7 +664,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the locationCode property.
+     * Obtiene el valor de la propiedad locationCode.
      * 
      * @return
      *     possible object is
@@ -672,7 +676,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the locationCode property.
+     * Define el valor de la propiedad locationCode.
      * 
      * @param value
      *     allowed object is
@@ -684,7 +688,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the binCode property.
+     * Obtiene el valor de la propiedad binCode.
      * 
      * @return
      *     possible object is
@@ -696,7 +700,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the binCode property.
+     * Define el valor de la propiedad binCode.
      * 
      * @param value
      *     allowed object is
@@ -708,7 +712,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the quantity property.
+     * Obtiene el valor de la propiedad quantity.
      * 
      * @return
      *     possible object is
@@ -720,7 +724,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the quantity property.
+     * Define el valor de la propiedad quantity.
      * 
      * @param value
      *     allowed object is
@@ -732,7 +736,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the reservedQuantity property.
+     * Obtiene el valor de la propiedad reservedQuantity.
      * 
      * @return
      *     possible object is
@@ -744,7 +748,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the reservedQuantity property.
+     * Define el valor de la propiedad reservedQuantity.
      * 
      * @param value
      *     allowed object is
@@ -756,7 +760,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the unitOfMeasureCode property.
+     * Obtiene el valor de la propiedad unitOfMeasureCode.
      * 
      * @return
      *     possible object is
@@ -768,7 +772,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the unitOfMeasureCode property.
+     * Define el valor de la propiedad unitOfMeasureCode.
      * 
      * @param value
      *     allowed object is
@@ -780,7 +784,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the unitOfMeasure property.
+     * Obtiene el valor de la propiedad unitOfMeasure.
      * 
      * @return
      *     possible object is
@@ -792,7 +796,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the unitOfMeasure property.
+     * Define el valor de la propiedad unitOfMeasure.
      * 
      * @param value
      *     allowed object is
@@ -804,7 +808,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the directUnitCost property.
+     * Obtiene el valor de la propiedad directUnitCost.
      * 
      * @return
      *     possible object is
@@ -816,7 +820,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the directUnitCost property.
+     * Define el valor de la propiedad directUnitCost.
      * 
      * @param value
      *     allowed object is
@@ -828,7 +832,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the indirectCostPercent property.
+     * Obtiene el valor de la propiedad indirectCostPercent.
      * 
      * @return
      *     possible object is
@@ -840,7 +844,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the indirectCostPercent property.
+     * Define el valor de la propiedad indirectCostPercent.
      * 
      * @param value
      *     allowed object is
@@ -852,7 +856,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the unitCostLCY property.
+     * Obtiene el valor de la propiedad unitCostLCY.
      * 
      * @return
      *     possible object is
@@ -864,7 +868,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the unitCostLCY property.
+     * Define el valor de la propiedad unitCostLCY.
      * 
      * @param value
      *     allowed object is
@@ -876,7 +880,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the unitPriceLCY property.
+     * Obtiene el valor de la propiedad unitPriceLCY.
      * 
      * @return
      *     possible object is
@@ -888,7 +892,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the unitPriceLCY property.
+     * Define el valor de la propiedad unitPriceLCY.
      * 
      * @param value
      *     allowed object is
@@ -900,7 +904,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the lineAmount property.
+     * Obtiene el valor de la propiedad lineAmount.
      * 
      * @return
      *     possible object is
@@ -912,7 +916,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the lineAmount property.
+     * Define el valor de la propiedad lineAmount.
      * 
      * @param value
      *     allowed object is
@@ -924,7 +928,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the lineDiscountPercent property.
+     * Obtiene el valor de la propiedad lineDiscountPercent.
      * 
      * @return
      *     possible object is
@@ -936,7 +940,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the lineDiscountPercent property.
+     * Define el valor de la propiedad lineDiscountPercent.
      * 
      * @param value
      *     allowed object is
@@ -948,7 +952,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the lineDiscountAmount property.
+     * Obtiene el valor de la propiedad lineDiscountAmount.
      * 
      * @return
      *     possible object is
@@ -960,7 +964,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the lineDiscountAmount property.
+     * Define el valor de la propiedad lineDiscountAmount.
      * 
      * @param value
      *     allowed object is
@@ -972,7 +976,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prepaymentPercent property.
+     * Obtiene el valor de la propiedad prepaymentPercent.
      * 
      * @return
      *     possible object is
@@ -984,7 +988,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prepaymentPercent property.
+     * Define el valor de la propiedad prepaymentPercent.
      * 
      * @param value
      *     allowed object is
@@ -996,7 +1000,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prepmtLineAmount property.
+     * Obtiene el valor de la propiedad prepmtLineAmount.
      * 
      * @return
      *     possible object is
@@ -1008,7 +1012,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prepmtLineAmount property.
+     * Define el valor de la propiedad prepmtLineAmount.
      * 
      * @param value
      *     allowed object is
@@ -1020,7 +1024,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prepmtAmtInv property.
+     * Obtiene el valor de la propiedad prepmtAmtInv.
      * 
      * @return
      *     possible object is
@@ -1032,7 +1036,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prepmtAmtInv property.
+     * Define el valor de la propiedad prepmtAmtInv.
      * 
      * @param value
      *     allowed object is
@@ -1044,7 +1048,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the allowInvoiceDisc property.
+     * Obtiene el valor de la propiedad allowInvoiceDisc.
      * 
      * @return
      *     possible object is
@@ -1056,7 +1060,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the allowInvoiceDisc property.
+     * Define el valor de la propiedad allowInvoiceDisc.
      * 
      * @param value
      *     allowed object is
@@ -1068,7 +1072,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the invDiscountAmount property.
+     * Obtiene el valor de la propiedad invDiscountAmount.
      * 
      * @return
      *     possible object is
@@ -1080,7 +1084,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the invDiscountAmount property.
+     * Define el valor de la propiedad invDiscountAmount.
      * 
      * @param value
      *     allowed object is
@@ -1092,7 +1096,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the qtyToReceive property.
+     * Obtiene el valor de la propiedad qtyToReceive.
      * 
      * @return
      *     possible object is
@@ -1104,7 +1108,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the qtyToReceive property.
+     * Define el valor de la propiedad qtyToReceive.
      * 
      * @param value
      *     allowed object is
@@ -1116,7 +1120,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the quantityReceived property.
+     * Obtiene el valor de la propiedad quantityReceived.
      * 
      * @return
      *     possible object is
@@ -1128,7 +1132,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the quantityReceived property.
+     * Define el valor de la propiedad quantityReceived.
      * 
      * @param value
      *     allowed object is
@@ -1140,7 +1144,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the qtyToInvoice property.
+     * Obtiene el valor de la propiedad qtyToInvoice.
      * 
      * @return
      *     possible object is
@@ -1152,7 +1156,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the qtyToInvoice property.
+     * Define el valor de la propiedad qtyToInvoice.
      * 
      * @param value
      *     allowed object is
@@ -1164,7 +1168,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the quantityInvoiced property.
+     * Obtiene el valor de la propiedad quantityInvoiced.
      * 
      * @return
      *     possible object is
@@ -1176,7 +1180,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the quantityInvoiced property.
+     * Define el valor de la propiedad quantityInvoiced.
      * 
      * @param value
      *     allowed object is
@@ -1188,7 +1192,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prepmtAmtToDeduct property.
+     * Obtiene el valor de la propiedad prepmtAmtToDeduct.
      * 
      * @return
      *     possible object is
@@ -1200,7 +1204,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prepmtAmtToDeduct property.
+     * Define el valor de la propiedad prepmtAmtToDeduct.
      * 
      * @param value
      *     allowed object is
@@ -1212,7 +1216,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prepmtAmtDeducted property.
+     * Obtiene el valor de la propiedad prepmtAmtDeducted.
      * 
      * @return
      *     possible object is
@@ -1224,7 +1228,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prepmtAmtDeducted property.
+     * Define el valor de la propiedad prepmtAmtDeducted.
      * 
      * @param value
      *     allowed object is
@@ -1236,7 +1240,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the allowItemChargeAssignment property.
+     * Obtiene el valor de la propiedad allowItemChargeAssignment.
      * 
      * @return
      *     possible object is
@@ -1248,7 +1252,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the allowItemChargeAssignment property.
+     * Define el valor de la propiedad allowItemChargeAssignment.
      * 
      * @param value
      *     allowed object is
@@ -1260,7 +1264,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the qtyToAssign property.
+     * Obtiene el valor de la propiedad qtyToAssign.
      * 
      * @return
      *     possible object is
@@ -1272,7 +1276,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the qtyToAssign property.
+     * Define el valor de la propiedad qtyToAssign.
      * 
      * @param value
      *     allowed object is
@@ -1284,7 +1288,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the qtyAssigned property.
+     * Obtiene el valor de la propiedad qtyAssigned.
      * 
      * @return
      *     possible object is
@@ -1296,7 +1300,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the qtyAssigned property.
+     * Define el valor de la propiedad qtyAssigned.
      * 
      * @param value
      *     allowed object is
@@ -1308,7 +1312,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobNo property.
+     * Obtiene el valor de la propiedad jobNo.
      * 
      * @return
      *     possible object is
@@ -1320,7 +1324,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobNo property.
+     * Define el valor de la propiedad jobNo.
      * 
      * @param value
      *     allowed object is
@@ -1332,7 +1336,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobTaskNo property.
+     * Obtiene el valor de la propiedad jobTaskNo.
      * 
      * @return
      *     possible object is
@@ -1344,7 +1348,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobTaskNo property.
+     * Define el valor de la propiedad jobTaskNo.
      * 
      * @param value
      *     allowed object is
@@ -1356,7 +1360,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineType property.
+     * Obtiene el valor de la propiedad jobLineType.
      * 
      * @return
      *     possible object is
@@ -1368,7 +1372,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineType property.
+     * Define el valor de la propiedad jobLineType.
      * 
      * @param value
      *     allowed object is
@@ -1380,7 +1384,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobUnitPrice property.
+     * Obtiene el valor de la propiedad jobUnitPrice.
      * 
      * @return
      *     possible object is
@@ -1392,7 +1396,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobUnitPrice property.
+     * Define el valor de la propiedad jobUnitPrice.
      * 
      * @param value
      *     allowed object is
@@ -1404,7 +1408,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineAmount property.
+     * Obtiene el valor de la propiedad jobLineAmount.
      * 
      * @return
      *     possible object is
@@ -1416,7 +1420,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineAmount property.
+     * Define el valor de la propiedad jobLineAmount.
      * 
      * @param value
      *     allowed object is
@@ -1428,7 +1432,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineDiscountAmount property.
+     * Obtiene el valor de la propiedad jobLineDiscountAmount.
      * 
      * @return
      *     possible object is
@@ -1440,7 +1444,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineDiscountAmount property.
+     * Define el valor de la propiedad jobLineDiscountAmount.
      * 
      * @param value
      *     allowed object is
@@ -1452,7 +1456,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineDiscountPercent property.
+     * Obtiene el valor de la propiedad jobLineDiscountPercent.
      * 
      * @return
      *     possible object is
@@ -1464,7 +1468,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineDiscountPercent property.
+     * Define el valor de la propiedad jobLineDiscountPercent.
      * 
      * @param value
      *     allowed object is
@@ -1476,7 +1480,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobTotalPrice property.
+     * Obtiene el valor de la propiedad jobTotalPrice.
      * 
      * @return
      *     possible object is
@@ -1488,7 +1492,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobTotalPrice property.
+     * Define el valor de la propiedad jobTotalPrice.
      * 
      * @param value
      *     allowed object is
@@ -1500,7 +1504,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobUnitPriceLCY property.
+     * Obtiene el valor de la propiedad jobUnitPriceLCY.
      * 
      * @return
      *     possible object is
@@ -1512,7 +1516,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobUnitPriceLCY property.
+     * Define el valor de la propiedad jobUnitPriceLCY.
      * 
      * @param value
      *     allowed object is
@@ -1524,7 +1528,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobTotalPriceLCY property.
+     * Obtiene el valor de la propiedad jobTotalPriceLCY.
      * 
      * @return
      *     possible object is
@@ -1536,7 +1540,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobTotalPriceLCY property.
+     * Define el valor de la propiedad jobTotalPriceLCY.
      * 
      * @param value
      *     allowed object is
@@ -1548,7 +1552,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineAmountLCY property.
+     * Obtiene el valor de la propiedad jobLineAmountLCY.
      * 
      * @return
      *     possible object is
@@ -1560,7 +1564,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineAmountLCY property.
+     * Define el valor de la propiedad jobLineAmountLCY.
      * 
      * @param value
      *     allowed object is
@@ -1572,7 +1576,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the jobLineDiscAmountLCY property.
+     * Obtiene el valor de la propiedad jobLineDiscAmountLCY.
      * 
      * @return
      *     possible object is
@@ -1584,7 +1588,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the jobLineDiscAmountLCY property.
+     * Define el valor de la propiedad jobLineDiscAmountLCY.
      * 
      * @param value
      *     allowed object is
@@ -1596,7 +1600,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the requestedReceiptDate property.
+     * Obtiene el valor de la propiedad requestedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1608,7 +1612,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the requestedReceiptDate property.
+     * Define el valor de la propiedad requestedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1620,7 +1624,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the promisedReceiptDate property.
+     * Obtiene el valor de la propiedad promisedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1632,7 +1636,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the promisedReceiptDate property.
+     * Define el valor de la propiedad promisedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1644,7 +1648,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the plannedReceiptDate property.
+     * Obtiene el valor de la propiedad plannedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1656,7 +1660,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the plannedReceiptDate property.
+     * Define el valor de la propiedad plannedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1668,7 +1672,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the expectedReceiptDate property.
+     * Obtiene el valor de la propiedad expectedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1680,7 +1684,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the expectedReceiptDate property.
+     * Define el valor de la propiedad expectedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1692,7 +1696,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the orderDate property.
+     * Obtiene el valor de la propiedad orderDate.
      * 
      * @return
      *     possible object is
@@ -1704,7 +1708,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the orderDate property.
+     * Define el valor de la propiedad orderDate.
      * 
      * @param value
      *     allowed object is
@@ -1716,7 +1720,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the leadTimeCalculation property.
+     * Obtiene el valor de la propiedad leadTimeCalculation.
      * 
      * @return
      *     possible object is
@@ -1728,7 +1732,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the leadTimeCalculation property.
+     * Define el valor de la propiedad leadTimeCalculation.
      * 
      * @param value
      *     allowed object is
@@ -1740,7 +1744,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the planningFlexibility property.
+     * Obtiene el valor de la propiedad planningFlexibility.
      * 
      * @return
      *     possible object is
@@ -1752,7 +1756,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the planningFlexibility property.
+     * Define el valor de la propiedad planningFlexibility.
      * 
      * @param value
      *     allowed object is
@@ -1764,7 +1768,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prodOrderNo property.
+     * Obtiene el valor de la propiedad prodOrderNo.
      * 
      * @return
      *     possible object is
@@ -1776,7 +1780,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prodOrderNo property.
+     * Define el valor de la propiedad prodOrderNo.
      * 
      * @param value
      *     allowed object is
@@ -1788,7 +1792,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the prodOrderLineNo property.
+     * Obtiene el valor de la propiedad prodOrderLineNo.
      * 
      * @return
      *     possible object is
@@ -1800,7 +1804,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the prodOrderLineNo property.
+     * Define el valor de la propiedad prodOrderLineNo.
      * 
      * @param value
      *     allowed object is
@@ -1812,7 +1816,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the operationNo property.
+     * Obtiene el valor de la propiedad operationNo.
      * 
      * @return
      *     possible object is
@@ -1824,7 +1828,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the operationNo property.
+     * Define el valor de la propiedad operationNo.
      * 
      * @param value
      *     allowed object is
@@ -1836,7 +1840,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the workCenterNo property.
+     * Obtiene el valor de la propiedad workCenterNo.
      * 
      * @return
      *     possible object is
@@ -1848,7 +1852,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the workCenterNo property.
+     * Define el valor de la propiedad workCenterNo.
      * 
      * @param value
      *     allowed object is
@@ -1860,7 +1864,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the finished property.
+     * Obtiene el valor de la propiedad finished.
      * 
      * @return
      *     possible object is
@@ -1872,7 +1876,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the finished property.
+     * Define el valor de la propiedad finished.
      * 
      * @param value
      *     allowed object is
@@ -1884,7 +1888,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the whseOutstandingQtyBase property.
+     * Obtiene el valor de la propiedad whseOutstandingQtyBase.
      * 
      * @return
      *     possible object is
@@ -1896,7 +1900,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the whseOutstandingQtyBase property.
+     * Define el valor de la propiedad whseOutstandingQtyBase.
      * 
      * @param value
      *     allowed object is
@@ -1908,7 +1912,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the inboundWhseHandlingTime property.
+     * Obtiene el valor de la propiedad inboundWhseHandlingTime.
      * 
      * @return
      *     possible object is
@@ -1920,7 +1924,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the inboundWhseHandlingTime property.
+     * Define el valor de la propiedad inboundWhseHandlingTime.
      * 
      * @param value
      *     allowed object is
@@ -1932,7 +1936,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the blanketOrderNo property.
+     * Obtiene el valor de la propiedad blanketOrderNo.
      * 
      * @return
      *     possible object is
@@ -1944,7 +1948,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the blanketOrderNo property.
+     * Define el valor de la propiedad blanketOrderNo.
      * 
      * @param value
      *     allowed object is
@@ -1956,7 +1960,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the blanketOrderLineNo property.
+     * Obtiene el valor de la propiedad blanketOrderLineNo.
      * 
      * @return
      *     possible object is
@@ -1968,7 +1972,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the blanketOrderLineNo property.
+     * Define el valor de la propiedad blanketOrderLineNo.
      * 
      * @param value
      *     allowed object is
@@ -1980,7 +1984,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the applToItemEntry property.
+     * Obtiene el valor de la propiedad applToItemEntry.
      * 
      * @return
      *     possible object is
@@ -1992,7 +1996,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the applToItemEntry property.
+     * Define el valor de la propiedad applToItemEntry.
      * 
      * @param value
      *     allowed object is
@@ -2004,7 +2008,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimension1Code property.
+     * Obtiene el valor de la propiedad shortcutDimension1Code.
      * 
      * @return
      *     possible object is
@@ -2016,7 +2020,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimension1Code property.
+     * Define el valor de la propiedad shortcutDimension1Code.
      * 
      * @param value
      *     allowed object is
@@ -2028,7 +2032,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimension2Code property.
+     * Obtiene el valor de la propiedad shortcutDimension2Code.
      * 
      * @return
      *     possible object is
@@ -2040,7 +2044,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimension2Code property.
+     * Define el valor de la propiedad shortcutDimension2Code.
      * 
      * @param value
      *     allowed object is
@@ -2052,7 +2056,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B3X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B3X005D.
      * 
      * @return
      *     possible object is
@@ -2064,7 +2068,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B3X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B3X005D.
      * 
      * @param value
      *     allowed object is
@@ -2076,7 +2080,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B4X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B4X005D.
      * 
      * @return
      *     possible object is
@@ -2088,7 +2092,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B4X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B4X005D.
      * 
      * @param value
      *     allowed object is
@@ -2100,7 +2104,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B5X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B5X005D.
      * 
      * @return
      *     possible object is
@@ -2112,7 +2116,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B5X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B5X005D.
      * 
      * @param value
      *     allowed object is
@@ -2124,7 +2128,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B6X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B6X005D.
      * 
      * @return
      *     possible object is
@@ -2136,7 +2140,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B6X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B6X005D.
      * 
      * @param value
      *     allowed object is
@@ -2148,7 +2152,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B7X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B7X005D.
      * 
      * @return
      *     possible object is
@@ -2160,7 +2164,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B7X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B7X005D.
      * 
      * @param value
      *     allowed object is
@@ -2172,7 +2176,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Gets the value of the shortcutDimCodeX005B8X005D property.
+     * Obtiene el valor de la propiedad shortcutDimCodeX005B8X005D.
      * 
      * @return
      *     possible object is
@@ -2184,7 +2188,7 @@ public class PurchaseOrderLine {
     }
 
     /**
-     * Sets the value of the shortcutDimCodeX005B8X005D property.
+     * Define el valor de la propiedad shortcutDimCodeX005B8X005D.
      * 
      * @param value
      *     allowed object is

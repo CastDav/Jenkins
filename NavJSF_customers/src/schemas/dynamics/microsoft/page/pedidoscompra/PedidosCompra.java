@@ -11,9 +11,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for PedidosCompra complex type.
+ * <p>Clase Java para PedidosCompra complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="PedidosCompra">
@@ -251,6 +251,7 @@ public class PedidosCompra {
     @XmlElement(name = "Assigned_User_ID")
     protected String assignedUserID;
     @XmlElement(name = "Status")
+    @XmlSchemaType(name = "string")
     protected Status status;
     @XmlElement(name = "Pay_to_Vendor_No")
     protected String payToVendorNo;
@@ -385,7 +386,7 @@ public class PedidosCompra {
     protected PurchaseOrderLineList purchLines;
 
     /**
-     * Gets the value of the key property.
+     * Obtiene el valor de la propiedad key.
      * 
      * @return
      *     possible object is
@@ -397,7 +398,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the key property.
+     * Define el valor de la propiedad key.
      * 
      * @param value
      *     allowed object is
@@ -409,7 +410,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the no property.
+     * Obtiene el valor de la propiedad no.
      * 
      * @return
      *     possible object is
@@ -421,7 +422,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the no property.
+     * Define el valor de la propiedad no.
      * 
      * @param value
      *     allowed object is
@@ -433,7 +434,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromVendorNo property.
+     * Obtiene el valor de la propiedad buyFromVendorNo.
      * 
      * @return
      *     possible object is
@@ -445,7 +446,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromVendorNo property.
+     * Define el valor de la propiedad buyFromVendorNo.
      * 
      * @param value
      *     allowed object is
@@ -457,7 +458,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromContactNo property.
+     * Obtiene el valor de la propiedad buyFromContactNo.
      * 
      * @return
      *     possible object is
@@ -469,7 +470,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromContactNo property.
+     * Define el valor de la propiedad buyFromContactNo.
      * 
      * @param value
      *     allowed object is
@@ -481,7 +482,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromVendorName property.
+     * Obtiene el valor de la propiedad buyFromVendorName.
      * 
      * @return
      *     possible object is
@@ -493,7 +494,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromVendorName property.
+     * Define el valor de la propiedad buyFromVendorName.
      * 
      * @param value
      *     allowed object is
@@ -505,7 +506,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromAddress property.
+     * Obtiene el valor de la propiedad buyFromAddress.
      * 
      * @return
      *     possible object is
@@ -517,7 +518,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromAddress property.
+     * Define el valor de la propiedad buyFromAddress.
      * 
      * @param value
      *     allowed object is
@@ -529,7 +530,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromAddress2 property.
+     * Obtiene el valor de la propiedad buyFromAddress2.
      * 
      * @return
      *     possible object is
@@ -541,7 +542,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromAddress2 property.
+     * Define el valor de la propiedad buyFromAddress2.
      * 
      * @param value
      *     allowed object is
@@ -553,7 +554,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromPostCode property.
+     * Obtiene el valor de la propiedad buyFromPostCode.
      * 
      * @return
      *     possible object is
@@ -565,7 +566,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromPostCode property.
+     * Define el valor de la propiedad buyFromPostCode.
      * 
      * @param value
      *     allowed object is
@@ -577,7 +578,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromCity property.
+     * Obtiene el valor de la propiedad buyFromCity.
      * 
      * @return
      *     possible object is
@@ -589,7 +590,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromCity property.
+     * Define el valor de la propiedad buyFromCity.
      * 
      * @param value
      *     allowed object is
@@ -601,7 +602,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromCounty property.
+     * Obtiene el valor de la propiedad buyFromCounty.
      * 
      * @return
      *     possible object is
@@ -613,7 +614,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromCounty property.
+     * Define el valor de la propiedad buyFromCounty.
      * 
      * @param value
      *     allowed object is
@@ -625,7 +626,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the buyFromContact property.
+     * Obtiene el valor de la propiedad buyFromContact.
      * 
      * @return
      *     possible object is
@@ -637,7 +638,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the buyFromContact property.
+     * Define el valor de la propiedad buyFromContact.
      * 
      * @param value
      *     allowed object is
@@ -649,7 +650,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the noOfArchivedVersions property.
+     * Obtiene el valor de la propiedad noOfArchivedVersions.
      * 
      * @return
      *     possible object is
@@ -661,7 +662,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the noOfArchivedVersions property.
+     * Define el valor de la propiedad noOfArchivedVersions.
      * 
      * @param value
      *     allowed object is
@@ -673,7 +674,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the postingDate property.
+     * Obtiene el valor de la propiedad postingDate.
      * 
      * @return
      *     possible object is
@@ -685,7 +686,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the postingDate property.
+     * Define el valor de la propiedad postingDate.
      * 
      * @param value
      *     allowed object is
@@ -697,7 +698,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the orderDate property.
+     * Obtiene el valor de la propiedad orderDate.
      * 
      * @return
      *     possible object is
@@ -709,7 +710,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the orderDate property.
+     * Define el valor de la propiedad orderDate.
      * 
      * @param value
      *     allowed object is
@@ -721,7 +722,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the documentDate property.
+     * Obtiene el valor de la propiedad documentDate.
      * 
      * @return
      *     possible object is
@@ -733,7 +734,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the documentDate property.
+     * Define el valor de la propiedad documentDate.
      * 
      * @param value
      *     allowed object is
@@ -745,7 +746,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the quoteNo property.
+     * Obtiene el valor de la propiedad quoteNo.
      * 
      * @return
      *     possible object is
@@ -757,7 +758,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the quoteNo property.
+     * Define el valor de la propiedad quoteNo.
      * 
      * @param value
      *     allowed object is
@@ -769,7 +770,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorOrderNo property.
+     * Obtiene el valor de la propiedad vendorOrderNo.
      * 
      * @return
      *     possible object is
@@ -781,7 +782,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorOrderNo property.
+     * Define el valor de la propiedad vendorOrderNo.
      * 
      * @param value
      *     allowed object is
@@ -793,7 +794,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorShipmentNo property.
+     * Obtiene el valor de la propiedad vendorShipmentNo.
      * 
      * @return
      *     possible object is
@@ -805,7 +806,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorShipmentNo property.
+     * Define el valor de la propiedad vendorShipmentNo.
      * 
      * @param value
      *     allowed object is
@@ -817,7 +818,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorInvoiceNo property.
+     * Obtiene el valor de la propiedad vendorInvoiceNo.
      * 
      * @return
      *     possible object is
@@ -829,7 +830,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorInvoiceNo property.
+     * Define el valor de la propiedad vendorInvoiceNo.
      * 
      * @param value
      *     allowed object is
@@ -841,7 +842,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the orderAddressCode property.
+     * Obtiene el valor de la propiedad orderAddressCode.
      * 
      * @return
      *     possible object is
@@ -853,7 +854,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the orderAddressCode property.
+     * Define el valor de la propiedad orderAddressCode.
      * 
      * @param value
      *     allowed object is
@@ -865,7 +866,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the purchaserCode property.
+     * Obtiene el valor de la propiedad purchaserCode.
      * 
      * @return
      *     possible object is
@@ -877,7 +878,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the purchaserCode property.
+     * Define el valor de la propiedad purchaserCode.
      * 
      * @param value
      *     allowed object is
@@ -889,7 +890,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the responsibilityCenter property.
+     * Obtiene el valor de la propiedad responsibilityCenter.
      * 
      * @return
      *     possible object is
@@ -901,7 +902,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the responsibilityCenter property.
+     * Define el valor de la propiedad responsibilityCenter.
      * 
      * @param value
      *     allowed object is
@@ -913,7 +914,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the assignedUserID property.
+     * Obtiene el valor de la propiedad assignedUserID.
      * 
      * @return
      *     possible object is
@@ -925,7 +926,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the assignedUserID property.
+     * Define el valor de la propiedad assignedUserID.
      * 
      * @param value
      *     allowed object is
@@ -937,7 +938,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the status property.
+     * Obtiene el valor de la propiedad status.
      * 
      * @return
      *     possible object is
@@ -949,7 +950,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the status property.
+     * Define el valor de la propiedad status.
      * 
      * @param value
      *     allowed object is
@@ -961,7 +962,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToVendorNo property.
+     * Obtiene el valor de la propiedad payToVendorNo.
      * 
      * @return
      *     possible object is
@@ -973,7 +974,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToVendorNo property.
+     * Define el valor de la propiedad payToVendorNo.
      * 
      * @param value
      *     allowed object is
@@ -985,7 +986,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToContactNo property.
+     * Obtiene el valor de la propiedad payToContactNo.
      * 
      * @return
      *     possible object is
@@ -997,7 +998,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToContactNo property.
+     * Define el valor de la propiedad payToContactNo.
      * 
      * @param value
      *     allowed object is
@@ -1009,7 +1010,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToName property.
+     * Obtiene el valor de la propiedad payToName.
      * 
      * @return
      *     possible object is
@@ -1021,7 +1022,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToName property.
+     * Define el valor de la propiedad payToName.
      * 
      * @param value
      *     allowed object is
@@ -1033,7 +1034,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToAddress property.
+     * Obtiene el valor de la propiedad payToAddress.
      * 
      * @return
      *     possible object is
@@ -1045,7 +1046,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToAddress property.
+     * Define el valor de la propiedad payToAddress.
      * 
      * @param value
      *     allowed object is
@@ -1057,7 +1058,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToAddress2 property.
+     * Obtiene el valor de la propiedad payToAddress2.
      * 
      * @return
      *     possible object is
@@ -1069,7 +1070,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToAddress2 property.
+     * Define el valor de la propiedad payToAddress2.
      * 
      * @param value
      *     allowed object is
@@ -1081,7 +1082,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToPostCode property.
+     * Obtiene el valor de la propiedad payToPostCode.
      * 
      * @return
      *     possible object is
@@ -1093,7 +1094,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToPostCode property.
+     * Define el valor de la propiedad payToPostCode.
      * 
      * @param value
      *     allowed object is
@@ -1105,7 +1106,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToCity property.
+     * Obtiene el valor de la propiedad payToCity.
      * 
      * @return
      *     possible object is
@@ -1117,7 +1118,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToCity property.
+     * Define el valor de la propiedad payToCity.
      * 
      * @param value
      *     allowed object is
@@ -1129,7 +1130,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToCounty property.
+     * Obtiene el valor de la propiedad payToCounty.
      * 
      * @return
      *     possible object is
@@ -1141,7 +1142,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToCounty property.
+     * Define el valor de la propiedad payToCounty.
      * 
      * @param value
      *     allowed object is
@@ -1153,7 +1154,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payToContact property.
+     * Obtiene el valor de la propiedad payToContact.
      * 
      * @return
      *     possible object is
@@ -1165,7 +1166,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payToContact property.
+     * Define el valor de la propiedad payToContact.
      * 
      * @param value
      *     allowed object is
@@ -1177,7 +1178,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shortcutDimension1Code property.
+     * Obtiene el valor de la propiedad shortcutDimension1Code.
      * 
      * @return
      *     possible object is
@@ -1189,7 +1190,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shortcutDimension1Code property.
+     * Define el valor de la propiedad shortcutDimension1Code.
      * 
      * @param value
      *     allowed object is
@@ -1201,7 +1202,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shortcutDimension2Code property.
+     * Obtiene el valor de la propiedad shortcutDimension2Code.
      * 
      * @return
      *     possible object is
@@ -1213,7 +1214,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shortcutDimension2Code property.
+     * Define el valor de la propiedad shortcutDimension2Code.
      * 
      * @param value
      *     allowed object is
@@ -1225,7 +1226,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the paymentTermsCode property.
+     * Obtiene el valor de la propiedad paymentTermsCode.
      * 
      * @return
      *     possible object is
@@ -1237,7 +1238,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the paymentTermsCode property.
+     * Define el valor de la propiedad paymentTermsCode.
      * 
      * @param value
      *     allowed object is
@@ -1249,7 +1250,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the dueDate property.
+     * Obtiene el valor de la propiedad dueDate.
      * 
      * @return
      *     possible object is
@@ -1261,7 +1262,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the dueDate property.
+     * Define el valor de la propiedad dueDate.
      * 
      * @param value
      *     allowed object is
@@ -1273,7 +1274,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the paymentDiscountPercent property.
+     * Obtiene el valor de la propiedad paymentDiscountPercent.
      * 
      * @return
      *     possible object is
@@ -1285,7 +1286,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the paymentDiscountPercent property.
+     * Define el valor de la propiedad paymentDiscountPercent.
      * 
      * @param value
      *     allowed object is
@@ -1297,7 +1298,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the pmtDiscountDate property.
+     * Obtiene el valor de la propiedad pmtDiscountDate.
      * 
      * @return
      *     possible object is
@@ -1309,7 +1310,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the pmtDiscountDate property.
+     * Define el valor de la propiedad pmtDiscountDate.
      * 
      * @param value
      *     allowed object is
@@ -1321,7 +1322,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the paymentMethodCode property.
+     * Obtiene el valor de la propiedad paymentMethodCode.
      * 
      * @return
      *     possible object is
@@ -1333,7 +1334,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the paymentMethodCode property.
+     * Define el valor de la propiedad paymentMethodCode.
      * 
      * @param value
      *     allowed object is
@@ -1345,7 +1346,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the onHold property.
+     * Obtiene el valor de la propiedad onHold.
      * 
      * @return
      *     possible object is
@@ -1357,7 +1358,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the onHold property.
+     * Define el valor de la propiedad onHold.
      * 
      * @param value
      *     allowed object is
@@ -1369,7 +1370,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the pricesIncludingVAT property.
+     * Obtiene el valor de la propiedad pricesIncludingVAT.
      * 
      * @return
      *     possible object is
@@ -1381,7 +1382,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the pricesIncludingVAT property.
+     * Define el valor de la propiedad pricesIncludingVAT.
      * 
      * @param value
      *     allowed object is
@@ -1393,7 +1394,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vatBusPostingGroup property.
+     * Obtiene el valor de la propiedad vatBusPostingGroup.
      * 
      * @return
      *     possible object is
@@ -1405,7 +1406,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vatBusPostingGroup property.
+     * Define el valor de la propiedad vatBusPostingGroup.
      * 
      * @param value
      *     allowed object is
@@ -1417,7 +1418,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToName property.
+     * Obtiene el valor de la propiedad shipToName.
      * 
      * @return
      *     possible object is
@@ -1429,7 +1430,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToName property.
+     * Define el valor de la propiedad shipToName.
      * 
      * @param value
      *     allowed object is
@@ -1441,7 +1442,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToAddress property.
+     * Obtiene el valor de la propiedad shipToAddress.
      * 
      * @return
      *     possible object is
@@ -1453,7 +1454,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToAddress property.
+     * Define el valor de la propiedad shipToAddress.
      * 
      * @param value
      *     allowed object is
@@ -1465,7 +1466,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToAddress2 property.
+     * Obtiene el valor de la propiedad shipToAddress2.
      * 
      * @return
      *     possible object is
@@ -1477,7 +1478,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToAddress2 property.
+     * Define el valor de la propiedad shipToAddress2.
      * 
      * @param value
      *     allowed object is
@@ -1489,7 +1490,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToPostCode property.
+     * Obtiene el valor de la propiedad shipToPostCode.
      * 
      * @return
      *     possible object is
@@ -1501,7 +1502,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToPostCode property.
+     * Define el valor de la propiedad shipToPostCode.
      * 
      * @param value
      *     allowed object is
@@ -1513,7 +1514,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToCity property.
+     * Obtiene el valor de la propiedad shipToCity.
      * 
      * @return
      *     possible object is
@@ -1525,7 +1526,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToCity property.
+     * Define el valor de la propiedad shipToCity.
      * 
      * @param value
      *     allowed object is
@@ -1537,7 +1538,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToCounty property.
+     * Obtiene el valor de la propiedad shipToCounty.
      * 
      * @return
      *     possible object is
@@ -1549,7 +1550,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToCounty property.
+     * Define el valor de la propiedad shipToCounty.
      * 
      * @param value
      *     allowed object is
@@ -1561,7 +1562,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToContact property.
+     * Obtiene el valor de la propiedad shipToContact.
      * 
      * @return
      *     possible object is
@@ -1573,7 +1574,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToContact property.
+     * Define el valor de la propiedad shipToContact.
      * 
      * @param value
      *     allowed object is
@@ -1585,7 +1586,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the locationCode property.
+     * Obtiene el valor de la propiedad locationCode.
      * 
      * @return
      *     possible object is
@@ -1597,7 +1598,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the locationCode property.
+     * Define el valor de la propiedad locationCode.
      * 
      * @param value
      *     allowed object is
@@ -1609,7 +1610,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the inboundWhseHandlingTime property.
+     * Obtiene el valor de la propiedad inboundWhseHandlingTime.
      * 
      * @return
      *     possible object is
@@ -1621,7 +1622,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the inboundWhseHandlingTime property.
+     * Define el valor de la propiedad inboundWhseHandlingTime.
      * 
      * @param value
      *     allowed object is
@@ -1633,7 +1634,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipmentMethodCode property.
+     * Obtiene el valor de la propiedad shipmentMethodCode.
      * 
      * @return
      *     possible object is
@@ -1645,7 +1646,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipmentMethodCode property.
+     * Define el valor de la propiedad shipmentMethodCode.
      * 
      * @param value
      *     allowed object is
@@ -1657,7 +1658,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the leadTimeCalculation property.
+     * Obtiene el valor de la propiedad leadTimeCalculation.
      * 
      * @return
      *     possible object is
@@ -1669,7 +1670,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the leadTimeCalculation property.
+     * Define el valor de la propiedad leadTimeCalculation.
      * 
      * @param value
      *     allowed object is
@@ -1681,7 +1682,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the requestedReceiptDate property.
+     * Obtiene el valor de la propiedad requestedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1693,7 +1694,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the requestedReceiptDate property.
+     * Define el valor de la propiedad requestedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1705,7 +1706,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the promisedReceiptDate property.
+     * Obtiene el valor de la propiedad promisedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1717,7 +1718,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the promisedReceiptDate property.
+     * Define el valor de la propiedad promisedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1729,7 +1730,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the expectedReceiptDate property.
+     * Obtiene el valor de la propiedad expectedReceiptDate.
      * 
      * @return
      *     possible object is
@@ -1741,7 +1742,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the expectedReceiptDate property.
+     * Define el valor de la propiedad expectedReceiptDate.
      * 
      * @param value
      *     allowed object is
@@ -1753,7 +1754,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the sellToCustomerNo property.
+     * Obtiene el valor de la propiedad sellToCustomerNo.
      * 
      * @return
      *     possible object is
@@ -1765,7 +1766,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the sellToCustomerNo property.
+     * Define el valor de la propiedad sellToCustomerNo.
      * 
      * @param value
      *     allowed object is
@@ -1777,7 +1778,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the shipToCode property.
+     * Obtiene el valor de la propiedad shipToCode.
      * 
      * @return
      *     possible object is
@@ -1789,7 +1790,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the shipToCode property.
+     * Define el valor de la propiedad shipToCode.
      * 
      * @param value
      *     allowed object is
@@ -1801,7 +1802,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the payAtCode property.
+     * Obtiene el valor de la propiedad payAtCode.
      * 
      * @return
      *     possible object is
@@ -1813,7 +1814,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the payAtCode property.
+     * Define el valor de la propiedad payAtCode.
      * 
      * @param value
      *     allowed object is
@@ -1825,7 +1826,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorBankAccCode property.
+     * Obtiene el valor de la propiedad vendorBankAccCode.
      * 
      * @return
      *     possible object is
@@ -1837,7 +1838,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorBankAccCode property.
+     * Define el valor de la propiedad vendorBankAccCode.
      * 
      * @param value
      *     allowed object is
@@ -1849,7 +1850,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the currencyCode property.
+     * Obtiene el valor de la propiedad currencyCode.
      * 
      * @return
      *     possible object is
@@ -1861,7 +1862,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the currencyCode property.
+     * Define el valor de la propiedad currencyCode.
      * 
      * @param value
      *     allowed object is
@@ -1873,7 +1874,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the transactionType property.
+     * Obtiene el valor de la propiedad transactionType.
      * 
      * @return
      *     possible object is
@@ -1885,7 +1886,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the transactionType property.
+     * Define el valor de la propiedad transactionType.
      * 
      * @param value
      *     allowed object is
@@ -1897,7 +1898,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the transactionSpecification property.
+     * Obtiene el valor de la propiedad transactionSpecification.
      * 
      * @return
      *     possible object is
@@ -1909,7 +1910,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the transactionSpecification property.
+     * Define el valor de la propiedad transactionSpecification.
      * 
      * @param value
      *     allowed object is
@@ -1921,7 +1922,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the transportMethod property.
+     * Obtiene el valor de la propiedad transportMethod.
      * 
      * @return
      *     possible object is
@@ -1933,7 +1934,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the transportMethod property.
+     * Define el valor de la propiedad transportMethod.
      * 
      * @param value
      *     allowed object is
@@ -1945,7 +1946,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the entryPoint property.
+     * Obtiene el valor de la propiedad entryPoint.
      * 
      * @return
      *     possible object is
@@ -1957,7 +1958,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the entryPoint property.
+     * Define el valor de la propiedad entryPoint.
      * 
      * @param value
      *     allowed object is
@@ -1969,7 +1970,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the area property.
+     * Obtiene el valor de la propiedad area.
      * 
      * @return
      *     possible object is
@@ -1981,7 +1982,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the area property.
+     * Define el valor de la propiedad area.
      * 
      * @param value
      *     allowed object is
@@ -1993,7 +1994,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the bizTalkPurchaseOrder property.
+     * Obtiene el valor de la propiedad bizTalkPurchaseOrder.
      * 
      * @return
      *     possible object is
@@ -2005,7 +2006,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the bizTalkPurchaseOrder property.
+     * Define el valor de la propiedad bizTalkPurchaseOrder.
      * 
      * @param value
      *     allowed object is
@@ -2017,7 +2018,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the dateSent property.
+     * Obtiene el valor de la propiedad dateSent.
      * 
      * @return
      *     possible object is
@@ -2029,7 +2030,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the dateSent property.
+     * Define el valor de la propiedad dateSent.
      * 
      * @param value
      *     allowed object is
@@ -2041,7 +2042,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the timeSent property.
+     * Obtiene el valor de la propiedad timeSent.
      * 
      * @return
      *     possible object is
@@ -2053,7 +2054,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the timeSent property.
+     * Define el valor de la propiedad timeSent.
      * 
      * @param value
      *     allowed object is
@@ -2065,7 +2066,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorQuoteNo property.
+     * Obtiene el valor de la propiedad vendorQuoteNo.
      * 
      * @return
      *     possible object is
@@ -2077,7 +2078,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorQuoteNo property.
+     * Define el valor de la propiedad vendorQuoteNo.
      * 
      * @param value
      *     allowed object is
@@ -2089,7 +2090,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the bizTalkPurchOrderCnfmn property.
+     * Obtiene el valor de la propiedad bizTalkPurchOrderCnfmn.
      * 
      * @return
      *     possible object is
@@ -2101,7 +2102,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the bizTalkPurchOrderCnfmn property.
+     * Define el valor de la propiedad bizTalkPurchOrderCnfmn.
      * 
      * @param value
      *     allowed object is
@@ -2113,7 +2114,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the dateReceived property.
+     * Obtiene el valor de la propiedad dateReceived.
      * 
      * @return
      *     possible object is
@@ -2125,7 +2126,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the dateReceived property.
+     * Define el valor de la propiedad dateReceived.
      * 
      * @param value
      *     allowed object is
@@ -2137,7 +2138,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the timeReceived property.
+     * Obtiene el valor de la propiedad timeReceived.
      * 
      * @return
      *     possible object is
@@ -2149,7 +2150,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the timeReceived property.
+     * Define el valor de la propiedad timeReceived.
      * 
      * @param value
      *     allowed object is
@@ -2161,7 +2162,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the bizTalkPurchaseReceipt property.
+     * Obtiene el valor de la propiedad bizTalkPurchaseReceipt.
      * 
      * @return
      *     possible object is
@@ -2173,7 +2174,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the bizTalkPurchaseReceipt property.
+     * Define el valor de la propiedad bizTalkPurchaseReceipt.
      * 
      * @param value
      *     allowed object is
@@ -2185,7 +2186,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the bizTalkPurchaseInvoice property.
+     * Obtiene el valor de la propiedad bizTalkPurchaseInvoice.
      * 
      * @return
      *     possible object is
@@ -2197,7 +2198,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the bizTalkPurchaseInvoice property.
+     * Define el valor de la propiedad bizTalkPurchaseInvoice.
      * 
      * @param value
      *     allowed object is
@@ -2209,7 +2210,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the prepaymentPercent property.
+     * Obtiene el valor de la propiedad prepaymentPercent.
      * 
      * @return
      *     possible object is
@@ -2221,7 +2222,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the prepaymentPercent property.
+     * Define el valor de la propiedad prepaymentPercent.
      * 
      * @param value
      *     allowed object is
@@ -2233,7 +2234,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the compressPrepayment property.
+     * Obtiene el valor de la propiedad compressPrepayment.
      * 
      * @return
      *     possible object is
@@ -2245,7 +2246,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the compressPrepayment property.
+     * Define el valor de la propiedad compressPrepayment.
      * 
      * @param value
      *     allowed object is
@@ -2257,7 +2258,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the prepmtPaymentTermsCode property.
+     * Obtiene el valor de la propiedad prepmtPaymentTermsCode.
      * 
      * @return
      *     possible object is
@@ -2269,7 +2270,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the prepmtPaymentTermsCode property.
+     * Define el valor de la propiedad prepmtPaymentTermsCode.
      * 
      * @param value
      *     allowed object is
@@ -2281,7 +2282,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the prepaymentDueDate property.
+     * Obtiene el valor de la propiedad prepaymentDueDate.
      * 
      * @return
      *     possible object is
@@ -2293,7 +2294,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the prepaymentDueDate property.
+     * Define el valor de la propiedad prepaymentDueDate.
      * 
      * @param value
      *     allowed object is
@@ -2305,7 +2306,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the prepmtPaymentDiscountPercent property.
+     * Obtiene el valor de la propiedad prepmtPaymentDiscountPercent.
      * 
      * @return
      *     possible object is
@@ -2317,7 +2318,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the prepmtPaymentDiscountPercent property.
+     * Define el valor de la propiedad prepmtPaymentDiscountPercent.
      * 
      * @param value
      *     allowed object is
@@ -2329,7 +2330,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the prepmtPmtDiscountDate property.
+     * Obtiene el valor de la propiedad prepmtPmtDiscountDate.
      * 
      * @return
      *     possible object is
@@ -2341,7 +2342,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the prepmtPmtDiscountDate property.
+     * Define el valor de la propiedad prepmtPmtDiscountDate.
      * 
      * @param value
      *     allowed object is
@@ -2353,7 +2354,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the vendorCrMemoNo property.
+     * Obtiene el valor de la propiedad vendorCrMemoNo.
      * 
      * @return
      *     possible object is
@@ -2365,7 +2366,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the vendorCrMemoNo property.
+     * Define el valor de la propiedad vendorCrMemoNo.
      * 
      * @param value
      *     allowed object is
@@ -2377,7 +2378,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Gets the value of the purchLines property.
+     * Obtiene el valor de la propiedad purchLines.
      * 
      * @return
      *     possible object is
@@ -2389,7 +2390,7 @@ public class PedidosCompra {
     }
 
     /**
-     * Sets the value of the purchLines property.
+     * Define el valor de la propiedad purchLines.
      * 
      * @param value
      *     allowed object is

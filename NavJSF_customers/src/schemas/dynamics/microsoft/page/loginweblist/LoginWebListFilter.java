@@ -4,13 +4,14 @@ package schemas.dynamics.microsoft.page.loginweblist;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for LoginWebList_Filter complex type.
+ * <p>Clase Java para LoginWebList_Filter complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="LoginWebList_Filter">
@@ -35,12 +36,13 @@ import javax.xml.bind.annotation.XmlType;
 public class LoginWebListFilter {
 
     @XmlElement(name = "Field", required = true)
+    @XmlSchemaType(name = "string")
     protected LoginWebListFields field;
     @XmlElement(name = "Criteria", required = true)
     protected String criteria;
 
     /**
-     * Gets the value of the field property.
+     * Obtiene el valor de la propiedad field.
      * 
      * @return
      *     possible object is
@@ -52,7 +54,7 @@ public class LoginWebListFilter {
     }
 
     /**
-     * Sets the value of the field property.
+     * Define el valor de la propiedad field.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +66,7 @@ public class LoginWebListFilter {
     }
 
     /**
-     * Gets the value of the criteria property.
+     * Obtiene el valor de la propiedad criteria.
      * 
      * @return
      *     possible object is
@@ -76,7 +78,7 @@ public class LoginWebListFilter {
     }
 
     /**
-     * Sets the value of the criteria property.
+     * Define el valor de la propiedad criteria.
      * 
      * @param value
      *     allowed object is

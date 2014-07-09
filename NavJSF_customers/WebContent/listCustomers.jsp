@@ -58,36 +58,78 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<h:form id="customerList">
 			<h:dataTable id="customers" value="#{customerListBean.customers}"
 				var="customer" border="1">
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="Nº" />
-					</f:facet>
-					<h:outputText value="#{customer.no}" />
-				</h:column>
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="Nombre" />
-					</f:facet>
-					<h:outputText value="#{customer.name}" />
-				</h:column>
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="Codigo Localizacion" />
-					</f:facet>
-					<h:outputText value="#{customer.locationCode}" />
-				</h:column>
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="C.P" />
-					</f:facet>
-					<h:outputText value="#{customer.postCode}" />
-				</h:column>
-				<h:column>
-					<f:facet name="header">
-						<h:outputText value="Contacto" />
-					</f:facet>
-					<h:outputText value="#{customer.contact}" />
-				</h:column>
+				 <h:column>
+		    <f:facet name="header">
+		     <h:outputText  value="Nº"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.no}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		     <h:outputText  value="Nombre"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.name}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		     <h:outputText  value="Dirección"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.address}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Cód. País/Región"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.countryRegionCode}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Ciudad"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.city}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="C.P."/>
+		    </f:facet>
+				<h:outputText value="#{customer.postCode}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Grupo Contable Negocio"/>
+		    </f:facet>
+				<h:outputText value="#{customer.genBusPostingGroup}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Grupo Contable Cliente"/>
+		    </f:facet>
+				<h:outputText value="#{customer.customerPostingGroup}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Cód. Términos Pago"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.paymentTermsCode}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Cód. Divisa"/>
+		    </f:facet>
+				<h:outputText value="#{customer.currencyCode}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Crédito"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.creditAmount}" />
+		  </h:column>
+		  <h:column>
+		    <f:facet name="header">
+		      <h:outputText  value="Totales en Pedidos Venta"/>
+		    </f:facet>
+		    <h:outputText value="#{customer.salesLCY}" />
+		  </h:column>  
 
 				<!-- Enlace para recoger a usuario -->
 				<h:column>

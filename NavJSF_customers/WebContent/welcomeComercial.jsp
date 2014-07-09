@@ -7,11 +7,7 @@
 <title><h:outputText value="#{msgs.title}" /></title>
 <!-- begin meta -->
 <meta charset="utf-8">
-<meta name="description"
-	content="This is a simple and elegant navigation menu built with HTML5 and CSS3.">
-<meta name="keywords"
-	content="HTML5, CSS3, navigation, navigation menu, gray">
-<meta name="author" content="Ixtendo">
+
 <!-- end meta -->
 
 <!-- begin CSS -->
@@ -45,11 +41,10 @@
 			<nav id="navigation">
 				<ul>
 					<li><a href="#">Inicio</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Consultar productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/consularPedidos.jsf">Consultar pedidos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/modificarCliente.jsf">Modificar cliente</a></li>
 				</ul>
 	
 			</nav>

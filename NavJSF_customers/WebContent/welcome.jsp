@@ -7,11 +7,7 @@
 <title><h:outputText value="#{msgs.title}" /></title>
 <!-- begin meta -->
 <meta charset="utf-8">
-<meta name="description"
-	content="This is a simple and elegant navigation menu built with HTML5 and CSS3.">
-<meta name="keywords"
-	content="HTML5, CSS3, navigation, navigation menu, gray">
-<meta name="author" content="Ixtendo">
+
 <!-- end meta -->
 
 <!-- begin CSS -->

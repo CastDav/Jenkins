@@ -4,13 +4,14 @@ package schemas.dynamics.microsoft.page.loginweblist;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for LoginWebList complex type.
+ * <p>Clase Java para LoginWebList complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="LoginWebList">
@@ -47,11 +48,12 @@ public class LoginWebList {
     protected String no;
     protected String username;
     protected String password;
+    @XmlSchemaType(name = "string")
     protected Role role;
     protected String name;
 
     /**
-     * Gets the value of the key property.
+     * Obtiene el valor de la propiedad key.
      * 
      * @return
      *     possible object is
@@ -63,7 +65,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the key property.
+     * Define el valor de la propiedad key.
      * 
      * @param value
      *     allowed object is
@@ -75,7 +77,7 @@ public class LoginWebList {
     }
 
     /**
-     * Gets the value of the no property.
+     * Obtiene el valor de la propiedad no.
      * 
      * @return
      *     possible object is
@@ -87,7 +89,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the no property.
+     * Define el valor de la propiedad no.
      * 
      * @param value
      *     allowed object is
@@ -99,7 +101,7 @@ public class LoginWebList {
     }
 
     /**
-     * Gets the value of the username property.
+     * Obtiene el valor de la propiedad username.
      * 
      * @return
      *     possible object is
@@ -111,7 +113,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the username property.
+     * Define el valor de la propiedad username.
      * 
      * @param value
      *     allowed object is
@@ -123,7 +125,7 @@ public class LoginWebList {
     }
 
     /**
-     * Gets the value of the password property.
+     * Obtiene el valor de la propiedad password.
      * 
      * @return
      *     possible object is
@@ -135,7 +137,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the password property.
+     * Define el valor de la propiedad password.
      * 
      * @param value
      *     allowed object is
@@ -147,7 +149,7 @@ public class LoginWebList {
     }
 
     /**
-     * Gets the value of the role property.
+     * Obtiene el valor de la propiedad role.
      * 
      * @return
      *     possible object is
@@ -159,7 +161,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the role property.
+     * Define el valor de la propiedad role.
      * 
      * @param value
      *     allowed object is
@@ -171,7 +173,7 @@ public class LoginWebList {
     }
 
     /**
-     * Gets the value of the name property.
+     * Obtiene el valor de la propiedad name.
      * 
      * @return
      *     possible object is
@@ -183,7 +185,7 @@ public class LoginWebList {
     }
 
     /**
-     * Sets the value of the name property.
+     * Define el valor de la propiedad name.
      * 
      * @param value
      *     allowed object is
