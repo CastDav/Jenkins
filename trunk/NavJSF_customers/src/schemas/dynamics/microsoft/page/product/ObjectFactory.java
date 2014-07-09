@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetRecIdFromKeyResult }
+     * Create an instance of {@link Read }
      * 
      */
-    public GetRecIdFromKeyResult createGetRecIdFromKeyResult() {
-        return new GetRecIdFromKeyResult();
+    public Read createRead() {
+        return new Read();
     }
 
     /**
@@ -46,11 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link IsUpdated }
+     * Create an instance of {@link GetRecIdFromKeyResult }
      * 
      */
-    public IsUpdated createIsUpdated() {
-        return new IsUpdated();
+    public GetRecIdFromKeyResult createGetRecIdFromKeyResult() {
+        return new GetRecIdFromKeyResult();
     }
 
     /**
@@ -67,46 +67,6 @@ public class ObjectFactory {
      */
     public ProductList createProductList() {
         return new ProductList();
-    }
-
-    /**
-     * Create an instance of {@link ReadResult }
-     * 
-     */
-    public ReadResult createReadResult() {
-        return new ReadResult();
-    }
-
-    /**
-     * Create an instance of {@link Product }
-     * 
-     */
-    public Product createProduct() {
-        return new Product();
-    }
-
-    /**
-     * Create an instance of {@link ReadByRecId }
-     * 
-     */
-    public ReadByRecId createReadByRecId() {
-        return new ReadByRecId();
-    }
-
-    /**
-     * Create an instance of {@link ReadByRecIdResult }
-     * 
-     */
-    public ReadByRecIdResult createReadByRecIdResult() {
-        return new ReadByRecIdResult();
-    }
-
-    /**
-     * Create an instance of {@link Read }
-     * 
-     */
-    public Read createRead() {
-        return new Read();
     }
 
     /**
@@ -131,6 +91,46 @@ public class ObjectFactory {
      */
     public GetRecIdFromKey createGetRecIdFromKey() {
         return new GetRecIdFromKey();
+    }
+
+    /**
+     * Create an instance of {@link ReadResult }
+     * 
+     */
+    public ReadResult createReadResult() {
+        return new ReadResult();
+    }
+
+    /**
+     * Create an instance of {@link Product }
+     * 
+     */
+    public Product createProduct() {
+        return new Product();
+    }
+
+    /**
+     * Create an instance of {@link ReadByRecIdResult }
+     * 
+     */
+    public ReadByRecIdResult createReadByRecIdResult() {
+        return new ReadByRecIdResult();
+    }
+
+    /**
+     * Create an instance of {@link ReadByRecId }
+     * 
+     */
+    public ReadByRecId createReadByRecId() {
+        return new ReadByRecId();
+    }
+
+    /**
+     * Create an instance of {@link IsUpdated }
+     * 
+     */
+    public IsUpdated createIsUpdated() {
+        return new IsUpdated();
     }
 
 }

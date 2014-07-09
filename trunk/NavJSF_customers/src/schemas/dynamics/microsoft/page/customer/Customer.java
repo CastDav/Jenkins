@@ -11,9 +11,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for Customer complex type.
+ * <p>Clase Java para Customer complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="Customer">
@@ -51,6 +51,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="Reserve" type="{urn:microsoft-dynamics-schemas/page/customer}Reserve" minOccurs="0"/>
  *         &lt;element name="Shipping_Advice" type="{urn:microsoft-dynamics-schemas/page/customer}Shipping_Advice" minOccurs="0"/>
  *         &lt;element name="Shipping_Agent_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="salesLCY" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="creditAmount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="eMail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Base_Calendar_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -93,6 +98,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "reserve",
     "shippingAdvice",
     "shippingAgentCode",
+    "salesLCY",
+    "address",
+    "creditAmount",
+    "eMail",
+    "city",
     "baseCalendarCode"
 })
 public class Customer {
@@ -146,25 +156,34 @@ public class Customer {
     @XmlElement(name = "Credit_Limit_LCY")
     protected BigDecimal creditLimitLCY;
     @XmlElement(name = "Blocked")
+    @XmlSchemaType(name = "string")
     protected Blocked blocked;
     @XmlElement(name = "Last_Date_Modified")
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar lastDateModified;
     @XmlElement(name = "Application_Method")
+    @XmlSchemaType(name = "string")
     protected ApplicationMethod applicationMethod;
     @XmlElement(name = "Combine_Shipments")
     protected Boolean combineShipments;
     @XmlElement(name = "Reserve")
+    @XmlSchemaType(name = "string")
     protected Reserve reserve;
     @XmlElement(name = "Shipping_Advice")
+    @XmlSchemaType(name = "string")
     protected ShippingAdvice shippingAdvice;
     @XmlElement(name = "Shipping_Agent_Code")
     protected String shippingAgentCode;
+    protected BigDecimal salesLCY;
+    protected String address;
+    protected BigDecimal creditAmount;
+    protected String eMail;
+    protected String city;
     @XmlElement(name = "Base_Calendar_Code")
     protected String baseCalendarCode;
 
     /**
-     * Gets the value of the key property.
+     * Obtiene el valor de la propiedad key.
      * 
      * @return
      *     possible object is
@@ -176,7 +195,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the key property.
+     * Define el valor de la propiedad key.
      * 
      * @param value
      *     allowed object is
@@ -188,7 +207,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the no property.
+     * Obtiene el valor de la propiedad no.
      * 
      * @return
      *     possible object is
@@ -200,7 +219,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the no property.
+     * Define el valor de la propiedad no.
      * 
      * @param value
      *     allowed object is
@@ -212,7 +231,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the name property.
+     * Obtiene el valor de la propiedad name.
      * 
      * @return
      *     possible object is
@@ -224,7 +243,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the name property.
+     * Define el valor de la propiedad name.
      * 
      * @param value
      *     allowed object is
@@ -236,7 +255,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the responsibilityCenter property.
+     * Obtiene el valor de la propiedad responsibilityCenter.
      * 
      * @return
      *     possible object is
@@ -248,7 +267,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the responsibilityCenter property.
+     * Define el valor de la propiedad responsibilityCenter.
      * 
      * @param value
      *     allowed object is
@@ -260,7 +279,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the locationCode property.
+     * Obtiene el valor de la propiedad locationCode.
      * 
      * @return
      *     possible object is
@@ -272,7 +291,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the locationCode property.
+     * Define el valor de la propiedad locationCode.
      * 
      * @param value
      *     allowed object is
@@ -284,7 +303,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the postCode property.
+     * Obtiene el valor de la propiedad postCode.
      * 
      * @return
      *     possible object is
@@ -296,7 +315,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the postCode property.
+     * Define el valor de la propiedad postCode.
      * 
      * @param value
      *     allowed object is
@@ -308,7 +327,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the countryRegionCode property.
+     * Obtiene el valor de la propiedad countryRegionCode.
      * 
      * @return
      *     possible object is
@@ -320,7 +339,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the countryRegionCode property.
+     * Define el valor de la propiedad countryRegionCode.
      * 
      * @param value
      *     allowed object is
@@ -332,7 +351,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the phoneNo property.
+     * Obtiene el valor de la propiedad phoneNo.
      * 
      * @return
      *     possible object is
@@ -344,7 +363,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the phoneNo property.
+     * Define el valor de la propiedad phoneNo.
      * 
      * @param value
      *     allowed object is
@@ -356,7 +375,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the faxNo property.
+     * Obtiene el valor de la propiedad faxNo.
      * 
      * @return
      *     possible object is
@@ -368,7 +387,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the faxNo property.
+     * Define el valor de la propiedad faxNo.
      * 
      * @param value
      *     allowed object is
@@ -380,7 +399,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the icPartnerCode property.
+     * Obtiene el valor de la propiedad icPartnerCode.
      * 
      * @return
      *     possible object is
@@ -392,7 +411,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the icPartnerCode property.
+     * Define el valor de la propiedad icPartnerCode.
      * 
      * @param value
      *     allowed object is
@@ -404,7 +423,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the contact property.
+     * Obtiene el valor de la propiedad contact.
      * 
      * @return
      *     possible object is
@@ -416,7 +435,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the contact property.
+     * Define el valor de la propiedad contact.
      * 
      * @param value
      *     allowed object is
@@ -428,7 +447,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the salespersonCode property.
+     * Obtiene el valor de la propiedad salespersonCode.
      * 
      * @return
      *     possible object is
@@ -440,7 +459,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the salespersonCode property.
+     * Define el valor de la propiedad salespersonCode.
      * 
      * @param value
      *     allowed object is
@@ -452,7 +471,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the customerPostingGroup property.
+     * Obtiene el valor de la propiedad customerPostingGroup.
      * 
      * @return
      *     possible object is
@@ -464,7 +483,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the customerPostingGroup property.
+     * Define el valor de la propiedad customerPostingGroup.
      * 
      * @param value
      *     allowed object is
@@ -476,7 +495,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the genBusPostingGroup property.
+     * Obtiene el valor de la propiedad genBusPostingGroup.
      * 
      * @return
      *     possible object is
@@ -488,7 +507,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the genBusPostingGroup property.
+     * Define el valor de la propiedad genBusPostingGroup.
      * 
      * @param value
      *     allowed object is
@@ -500,7 +519,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the vatBusPostingGroup property.
+     * Obtiene el valor de la propiedad vatBusPostingGroup.
      * 
      * @return
      *     possible object is
@@ -512,7 +531,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the vatBusPostingGroup property.
+     * Define el valor de la propiedad vatBusPostingGroup.
      * 
      * @param value
      *     allowed object is
@@ -524,7 +543,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the customerPriceGroup property.
+     * Obtiene el valor de la propiedad customerPriceGroup.
      * 
      * @return
      *     possible object is
@@ -536,7 +555,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the customerPriceGroup property.
+     * Define el valor de la propiedad customerPriceGroup.
      * 
      * @param value
      *     allowed object is
@@ -548,7 +567,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the customerDiscGroup property.
+     * Obtiene el valor de la propiedad customerDiscGroup.
      * 
      * @return
      *     possible object is
@@ -560,7 +579,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the customerDiscGroup property.
+     * Define el valor de la propiedad customerDiscGroup.
      * 
      * @param value
      *     allowed object is
@@ -572,7 +591,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the paymentTermsCode property.
+     * Obtiene el valor de la propiedad paymentTermsCode.
      * 
      * @return
      *     possible object is
@@ -584,7 +603,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the paymentTermsCode property.
+     * Define el valor de la propiedad paymentTermsCode.
      * 
      * @param value
      *     allowed object is
@@ -596,7 +615,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the reminderTermsCode property.
+     * Obtiene el valor de la propiedad reminderTermsCode.
      * 
      * @return
      *     possible object is
@@ -608,7 +627,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the reminderTermsCode property.
+     * Define el valor de la propiedad reminderTermsCode.
      * 
      * @param value
      *     allowed object is
@@ -620,7 +639,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the finChargeTermsCode property.
+     * Obtiene el valor de la propiedad finChargeTermsCode.
      * 
      * @return
      *     possible object is
@@ -632,7 +651,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the finChargeTermsCode property.
+     * Define el valor de la propiedad finChargeTermsCode.
      * 
      * @param value
      *     allowed object is
@@ -644,7 +663,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the currencyCode property.
+     * Obtiene el valor de la propiedad currencyCode.
      * 
      * @return
      *     possible object is
@@ -656,7 +675,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the currencyCode property.
+     * Define el valor de la propiedad currencyCode.
      * 
      * @param value
      *     allowed object is
@@ -668,7 +687,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the languageCode property.
+     * Obtiene el valor de la propiedad languageCode.
      * 
      * @return
      *     possible object is
@@ -680,7 +699,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the languageCode property.
+     * Define el valor de la propiedad languageCode.
      * 
      * @param value
      *     allowed object is
@@ -692,7 +711,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the searchName property.
+     * Obtiene el valor de la propiedad searchName.
      * 
      * @return
      *     possible object is
@@ -704,7 +723,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the searchName property.
+     * Define el valor de la propiedad searchName.
      * 
      * @param value
      *     allowed object is
@@ -716,7 +735,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the creditLimitLCY property.
+     * Obtiene el valor de la propiedad creditLimitLCY.
      * 
      * @return
      *     possible object is
@@ -728,7 +747,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the creditLimitLCY property.
+     * Define el valor de la propiedad creditLimitLCY.
      * 
      * @param value
      *     allowed object is
@@ -740,7 +759,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the blocked property.
+     * Obtiene el valor de la propiedad blocked.
      * 
      * @return
      *     possible object is
@@ -752,7 +771,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the blocked property.
+     * Define el valor de la propiedad blocked.
      * 
      * @param value
      *     allowed object is
@@ -764,7 +783,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the lastDateModified property.
+     * Obtiene el valor de la propiedad lastDateModified.
      * 
      * @return
      *     possible object is
@@ -776,7 +795,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the lastDateModified property.
+     * Define el valor de la propiedad lastDateModified.
      * 
      * @param value
      *     allowed object is
@@ -788,7 +807,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the applicationMethod property.
+     * Obtiene el valor de la propiedad applicationMethod.
      * 
      * @return
      *     possible object is
@@ -800,7 +819,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the applicationMethod property.
+     * Define el valor de la propiedad applicationMethod.
      * 
      * @param value
      *     allowed object is
@@ -812,7 +831,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the combineShipments property.
+     * Obtiene el valor de la propiedad combineShipments.
      * 
      * @return
      *     possible object is
@@ -824,7 +843,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the combineShipments property.
+     * Define el valor de la propiedad combineShipments.
      * 
      * @param value
      *     allowed object is
@@ -836,7 +855,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the reserve property.
+     * Obtiene el valor de la propiedad reserve.
      * 
      * @return
      *     possible object is
@@ -848,7 +867,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the reserve property.
+     * Define el valor de la propiedad reserve.
      * 
      * @param value
      *     allowed object is
@@ -860,7 +879,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the shippingAdvice property.
+     * Obtiene el valor de la propiedad shippingAdvice.
      * 
      * @return
      *     possible object is
@@ -872,7 +891,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the shippingAdvice property.
+     * Define el valor de la propiedad shippingAdvice.
      * 
      * @param value
      *     allowed object is
@@ -884,7 +903,7 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the shippingAgentCode property.
+     * Obtiene el valor de la propiedad shippingAgentCode.
      * 
      * @return
      *     possible object is
@@ -896,7 +915,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the shippingAgentCode property.
+     * Define el valor de la propiedad shippingAgentCode.
      * 
      * @param value
      *     allowed object is
@@ -908,7 +927,127 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the baseCalendarCode property.
+     * Obtiene el valor de la propiedad salesLCY.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getSalesLCY() {
+        return salesLCY;
+    }
+
+    /**
+     * Define el valor de la propiedad salesLCY.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setSalesLCY(BigDecimal value) {
+        this.salesLCY = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad address.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * Define el valor de la propiedad address.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAddress(String value) {
+        this.address = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad creditAmount.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getCreditAmount() {
+        return creditAmount;
+    }
+
+    /**
+     * Define el valor de la propiedad creditAmount.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setCreditAmount(BigDecimal value) {
+        this.creditAmount = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad eMail.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getEMail() {
+        return eMail;
+    }
+
+    /**
+     * Define el valor de la propiedad eMail.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setEMail(String value) {
+        this.eMail = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad city.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCity() {
+        return city;
+    }
+
+    /**
+     * Define el valor de la propiedad city.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCity(String value) {
+        this.city = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad baseCalendarCode.
      * 
      * @return
      *     possible object is
@@ -920,7 +1059,7 @@ public class Customer {
     }
 
     /**
-     * Sets the value of the baseCalendarCode property.
+     * Define el valor de la propiedad baseCalendarCode.
      * 
      * @param value
      *     allowed object is

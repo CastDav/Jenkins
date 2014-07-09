@@ -30,163 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteResult }
-     * 
-     */
-    public DeleteResult createDeleteResult() {
-        return new DeleteResult();
-    }
-
-    /**
-     * Create an instance of {@link UpdateMultipleResult }
-     * 
-     */
-    public UpdateMultipleResult createUpdateMultipleResult() {
-        return new UpdateMultipleResult();
-    }
-
-    /**
-     * Create an instance of {@link PedidosCompraList }
-     * 
-     */
-    public PedidosCompraList createPedidosCompraList() {
-        return new PedidosCompraList();
-    }
-
-    /**
-     * Create an instance of {@link Update }
-     * 
-     */
-    public Update createUpdate() {
-        return new Update();
-    }
-
-    /**
-     * Create an instance of {@link PedidosCompra }
-     * 
-     */
-    public PedidosCompra createPedidosCompra() {
-        return new PedidosCompra();
-    }
-
-    /**
-     * Create an instance of {@link ReadByRecId }
-     * 
-     */
-    public ReadByRecId createReadByRecId() {
-        return new ReadByRecId();
-    }
-
-    /**
-     * Create an instance of {@link ReadByRecIdResult }
-     * 
-     */
-    public ReadByRecIdResult createReadByRecIdResult() {
-        return new ReadByRecIdResult();
-    }
-
-    /**
-     * Create an instance of {@link GetRecIdFromKey }
-     * 
-     */
-    public GetRecIdFromKey createGetRecIdFromKey() {
-        return new GetRecIdFromKey();
-    }
-
-    /**
-     * Create an instance of {@link CreateResult }
-     * 
-     */
-    public CreateResult createCreateResult() {
-        return new CreateResult();
-    }
-
-    /**
-     * Create an instance of {@link UpdateResult }
-     * 
-     */
-    public UpdateResult createUpdateResult() {
-        return new UpdateResult();
-    }
-
-    /**
-     * Create an instance of {@link GetRecIdFromKeyResult }
-     * 
-     */
-    public GetRecIdFromKeyResult createGetRecIdFromKeyResult() {
-        return new GetRecIdFromKeyResult();
-    }
-
-    /**
-     * Create an instance of {@link IsUpdated }
-     * 
-     */
-    public IsUpdated createIsUpdated() {
-        return new IsUpdated();
-    }
-
-    /**
      * Create an instance of {@link IsUpdatedResult }
      * 
      */
     public IsUpdatedResult createIsUpdatedResult() {
         return new IsUpdatedResult();
-    }
-
-    /**
-     * Create an instance of {@link UpdateMultiple }
-     * 
-     */
-    public UpdateMultiple createUpdateMultiple() {
-        return new UpdateMultiple();
-    }
-
-    /**
-     * Create an instance of {@link ReadMultipleResult }
-     * 
-     */
-    public ReadMultipleResult createReadMultipleResult() {
-        return new ReadMultipleResult();
-    }
-
-    /**
-     * Create an instance of {@link ReadResult }
-     * 
-     */
-    public ReadResult createReadResult() {
-        return new ReadResult();
-    }
-
-    /**
-     * Create an instance of {@link DeletePurchLinesResult }
-     * 
-     */
-    public DeletePurchLinesResult createDeletePurchLinesResult() {
-        return new DeletePurchLinesResult();
-    }
-
-    /**
-     * Create an instance of {@link Create }
-     * 
-     */
-    public Create createCreate() {
-        return new Create();
-    }
-
-    /**
-     * Create an instance of {@link DeletePurchLines }
-     * 
-     */
-    public DeletePurchLines createDeletePurchLines() {
-        return new DeletePurchLines();
-    }
-
-    /**
-     * Create an instance of {@link Read }
-     * 
-     */
-    public Read createRead() {
-        return new Read();
     }
 
     /**
@@ -198,19 +46,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreateMultiple }
+     * Create an instance of {@link GetRecIdFromKeyResult }
      * 
      */
-    public CreateMultiple createCreateMultiple() {
-        return new CreateMultiple();
+    public GetRecIdFromKeyResult createGetRecIdFromKeyResult() {
+        return new GetRecIdFromKeyResult();
     }
 
     /**
-     * Create an instance of {@link CreateMultipleResult }
+     * Create an instance of {@link UpdateMultiple }
      * 
      */
-    public CreateMultipleResult createCreateMultipleResult() {
-        return new CreateMultipleResult();
+    public UpdateMultiple createUpdateMultiple() {
+        return new UpdateMultiple();
+    }
+
+    /**
+     * Create an instance of {@link PedidosCompraList }
+     * 
+     */
+    public PedidosCompraList createPedidosCompraList() {
+        return new PedidosCompraList();
     }
 
     /**
@@ -230,11 +86,147 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PurchaseOrderLineList }
+     * Create an instance of {@link DeleteResult }
      * 
      */
-    public PurchaseOrderLineList createPurchaseOrderLineList() {
-        return new PurchaseOrderLineList();
+    public DeleteResult createDeleteResult() {
+        return new DeleteResult();
+    }
+
+    /**
+     * Create an instance of {@link GetRecIdFromKey }
+     * 
+     */
+    public GetRecIdFromKey createGetRecIdFromKey() {
+        return new GetRecIdFromKey();
+    }
+
+    /**
+     * Create an instance of {@link ReadResult }
+     * 
+     */
+    public ReadResult createReadResult() {
+        return new ReadResult();
+    }
+
+    /**
+     * Create an instance of {@link PedidosCompra }
+     * 
+     */
+    public PedidosCompra createPedidosCompra() {
+        return new PedidosCompra();
+    }
+
+    /**
+     * Create an instance of {@link ReadByRecIdResult }
+     * 
+     */
+    public ReadByRecIdResult createReadByRecIdResult() {
+        return new ReadByRecIdResult();
+    }
+
+    /**
+     * Create an instance of {@link Update }
+     * 
+     */
+    public Update createUpdate() {
+        return new Update();
+    }
+
+    /**
+     * Create an instance of {@link UpdateResult }
+     * 
+     */
+    public UpdateResult createUpdateResult() {
+        return new UpdateResult();
+    }
+
+    /**
+     * Create an instance of {@link Read }
+     * 
+     */
+    public Read createRead() {
+        return new Read();
+    }
+
+    /**
+     * Create an instance of {@link CreateResult }
+     * 
+     */
+    public CreateResult createCreateResult() {
+        return new CreateResult();
+    }
+
+    /**
+     * Create an instance of {@link CreateMultiple }
+     * 
+     */
+    public CreateMultiple createCreateMultiple() {
+        return new CreateMultiple();
+    }
+
+    /**
+     * Create an instance of {@link DeletePurchLines }
+     * 
+     */
+    public DeletePurchLines createDeletePurchLines() {
+        return new DeletePurchLines();
+    }
+
+    /**
+     * Create an instance of {@link ReadMultipleResult }
+     * 
+     */
+    public ReadMultipleResult createReadMultipleResult() {
+        return new ReadMultipleResult();
+    }
+
+    /**
+     * Create an instance of {@link Create }
+     * 
+     */
+    public Create createCreate() {
+        return new Create();
+    }
+
+    /**
+     * Create an instance of {@link CreateMultipleResult }
+     * 
+     */
+    public CreateMultipleResult createCreateMultipleResult() {
+        return new CreateMultipleResult();
+    }
+
+    /**
+     * Create an instance of {@link ReadByRecId }
+     * 
+     */
+    public ReadByRecId createReadByRecId() {
+        return new ReadByRecId();
+    }
+
+    /**
+     * Create an instance of {@link UpdateMultipleResult }
+     * 
+     */
+    public UpdateMultipleResult createUpdateMultipleResult() {
+        return new UpdateMultipleResult();
+    }
+
+    /**
+     * Create an instance of {@link IsUpdated }
+     * 
+     */
+    public IsUpdated createIsUpdated() {
+        return new IsUpdated();
+    }
+
+    /**
+     * Create an instance of {@link DeletePurchLinesResult }
+     * 
+     */
+    public DeletePurchLinesResult createDeletePurchLinesResult() {
+        return new DeletePurchLinesResult();
     }
 
     /**
@@ -243,6 +235,14 @@ public class ObjectFactory {
      */
     public PurchaseOrderLine createPurchaseOrderLine() {
         return new PurchaseOrderLine();
+    }
+
+    /**
+     * Create an instance of {@link PurchaseOrderLineList }
+     * 
+     */
+    public PurchaseOrderLineList createPurchaseOrderLineList() {
+        return new PurchaseOrderLineList();
     }
 
 }
