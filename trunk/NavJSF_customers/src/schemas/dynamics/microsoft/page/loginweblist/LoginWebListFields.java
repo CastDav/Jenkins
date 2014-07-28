@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para LoginWebList_Fields.
+ * <p>Java class for LoginWebList_Fields.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
  * &lt;simpleType name="LoginWebList_Fields">
@@ -19,6 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="password"/>
  *     &lt;enumeration value="role"/>
  *     &lt;enumeration value="name"/>
+ *     &lt;enumeration value="numero"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -37,7 +38,9 @@ public enum LoginWebListFields {
     @XmlEnumValue("role")
     ROLE("role"),
     @XmlEnumValue("name")
-    NAME("name");
+    NAME("name"),
+    @XmlEnumValue("numero")
+    NUMERO("numero");
     private final String value;
 
     LoginWebListFields(String v) {

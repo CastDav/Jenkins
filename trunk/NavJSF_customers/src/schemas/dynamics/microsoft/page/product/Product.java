@@ -11,9 +11,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Clase Java para Product complex type.
+ * <p>Java class for Product complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="Product">
@@ -59,10 +59,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="Lead_Time_Calculation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Manufacturing_Policy" type="{urn:microsoft-dynamics-schemas/page/product}Manufacturing_Policy" minOccurs="0"/>
  *         &lt;element name="Flushing_Method" type="{urn:microsoft-dynamics-schemas/page/product}Flushing_Method" minOccurs="0"/>
+ *         &lt;element name="qtyOnSalesOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="qtyOnPurchOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="Inventory" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="qtyOnSalesOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="numUnidades" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Item_Tracking_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -113,10 +112,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "leadTimeCalculation",
     "manufacturingPolicy",
     "flushingMethod",
+    "qtyOnSalesOrder",
     "qtyOnPurchOrder",
     "inventory",
-    "qtyOnSalesOrder",
-    "numUnidades",
     "itemTrackingCode"
 })
 public class Product {
@@ -144,7 +142,6 @@ public class Product {
     @XmlElement(name = "Shelf_Bin_No")
     protected String shelfBinNo;
     @XmlElement(name = "Costing_Method")
-    @XmlSchemaType(name = "string")
     protected CostingMethod costingMethod;
     @XmlElement(name = "Cost_is_Adjusted")
     protected Boolean costIsAdjusted;
@@ -155,7 +152,6 @@ public class Product {
     @XmlElement(name = "Last_Direct_Cost")
     protected BigDecimal lastDirectCost;
     @XmlElement(name = "Price_Profit_Calculation")
-    @XmlSchemaType(name = "string")
     protected PriceProfitCalculation priceProfitCalculation;
     @XmlElement(name = "Profit_Percent")
     protected BigDecimal profitPercent;
@@ -193,28 +189,24 @@ public class Product {
     @XmlElement(name = "Sales_Unit_of_Measure")
     protected String salesUnitOfMeasure;
     @XmlElement(name = "Replenishment_System")
-    @XmlSchemaType(name = "string")
     protected ReplenishmentSystem replenishmentSystem;
     @XmlElement(name = "Purch_Unit_of_Measure")
     protected String purchUnitOfMeasure;
     @XmlElement(name = "Lead_Time_Calculation")
     protected String leadTimeCalculation;
     @XmlElement(name = "Manufacturing_Policy")
-    @XmlSchemaType(name = "string")
     protected ManufacturingPolicy manufacturingPolicy;
     @XmlElement(name = "Flushing_Method")
-    @XmlSchemaType(name = "string")
     protected FlushingMethod flushingMethod;
+    protected BigDecimal qtyOnSalesOrder;
     protected BigDecimal qtyOnPurchOrder;
     @XmlElement(name = "Inventory")
     protected BigDecimal inventory;
-    protected BigDecimal qtyOnSalesOrder;
-    protected String numUnidades;
     @XmlElement(name = "Item_Tracking_Code")
     protected String itemTrackingCode;
 
     /**
-     * Obtiene el valor de la propiedad key.
+     * Gets the value of the key property.
      * 
      * @return
      *     possible object is
@@ -226,7 +218,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad key.
+     * Sets the value of the key property.
      * 
      * @param value
      *     allowed object is
@@ -238,7 +230,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad no.
+     * Gets the value of the no property.
      * 
      * @return
      *     possible object is
@@ -250,7 +242,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad no.
+     * Sets the value of the no property.
      * 
      * @param value
      *     allowed object is
@@ -262,7 +254,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad description.
+     * Gets the value of the description property.
      * 
      * @return
      *     possible object is
@@ -274,7 +266,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad description.
+     * Sets the value of the description property.
      * 
      * @param value
      *     allowed object is
@@ -286,7 +278,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad createdFromNonstockItem.
+     * Gets the value of the createdFromNonstockItem property.
      * 
      * @return
      *     possible object is
@@ -298,7 +290,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad createdFromNonstockItem.
+     * Sets the value of the createdFromNonstockItem property.
      * 
      * @param value
      *     allowed object is
@@ -310,7 +302,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad substitutesExist.
+     * Gets the value of the substitutesExist property.
      * 
      * @return
      *     possible object is
@@ -322,7 +314,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad substitutesExist.
+     * Sets the value of the substitutesExist property.
      * 
      * @param value
      *     allowed object is
@@ -334,7 +326,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad stockkeepingUnitExists.
+     * Gets the value of the stockkeepingUnitExists property.
      * 
      * @return
      *     possible object is
@@ -346,7 +338,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad stockkeepingUnitExists.
+     * Sets the value of the stockkeepingUnitExists property.
      * 
      * @param value
      *     allowed object is
@@ -358,7 +350,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad billOfMaterials.
+     * Gets the value of the billOfMaterials property.
      * 
      * @return
      *     possible object is
@@ -370,7 +362,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad billOfMaterials.
+     * Sets the value of the billOfMaterials property.
      * 
      * @param value
      *     allowed object is
@@ -382,7 +374,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad productionBOMNo.
+     * Gets the value of the productionBOMNo property.
      * 
      * @return
      *     possible object is
@@ -394,7 +386,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad productionBOMNo.
+     * Sets the value of the productionBOMNo property.
      * 
      * @param value
      *     allowed object is
@@ -406,7 +398,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad routingNo.
+     * Gets the value of the routingNo property.
      * 
      * @return
      *     possible object is
@@ -418,7 +410,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad routingNo.
+     * Sets the value of the routingNo property.
      * 
      * @param value
      *     allowed object is
@@ -430,7 +422,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad baseUnitOfMeasure.
+     * Gets the value of the baseUnitOfMeasure property.
      * 
      * @return
      *     possible object is
@@ -442,7 +434,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad baseUnitOfMeasure.
+     * Sets the value of the baseUnitOfMeasure property.
      * 
      * @param value
      *     allowed object is
@@ -454,7 +446,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad shelfBinNo.
+     * Gets the value of the shelfBinNo property.
      * 
      * @return
      *     possible object is
@@ -466,7 +458,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad shelfBinNo.
+     * Sets the value of the shelfBinNo property.
      * 
      * @param value
      *     allowed object is
@@ -478,7 +470,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad costingMethod.
+     * Gets the value of the costingMethod property.
      * 
      * @return
      *     possible object is
@@ -490,7 +482,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad costingMethod.
+     * Sets the value of the costingMethod property.
      * 
      * @param value
      *     allowed object is
@@ -502,7 +494,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad costIsAdjusted.
+     * Gets the value of the costIsAdjusted property.
      * 
      * @return
      *     possible object is
@@ -514,7 +506,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad costIsAdjusted.
+     * Sets the value of the costIsAdjusted property.
      * 
      * @param value
      *     allowed object is
@@ -526,7 +518,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad standardCost.
+     * Gets the value of the standardCost property.
      * 
      * @return
      *     possible object is
@@ -538,7 +530,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad standardCost.
+     * Sets the value of the standardCost property.
      * 
      * @param value
      *     allowed object is
@@ -550,7 +542,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad unitCost.
+     * Gets the value of the unitCost property.
      * 
      * @return
      *     possible object is
@@ -562,7 +554,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad unitCost.
+     * Sets the value of the unitCost property.
      * 
      * @param value
      *     allowed object is
@@ -574,7 +566,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad lastDirectCost.
+     * Gets the value of the lastDirectCost property.
      * 
      * @return
      *     possible object is
@@ -586,7 +578,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad lastDirectCost.
+     * Sets the value of the lastDirectCost property.
      * 
      * @param value
      *     allowed object is
@@ -598,7 +590,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad priceProfitCalculation.
+     * Gets the value of the priceProfitCalculation property.
      * 
      * @return
      *     possible object is
@@ -610,7 +602,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad priceProfitCalculation.
+     * Sets the value of the priceProfitCalculation property.
      * 
      * @param value
      *     allowed object is
@@ -622,7 +614,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad profitPercent.
+     * Gets the value of the profitPercent property.
      * 
      * @return
      *     possible object is
@@ -634,7 +626,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad profitPercent.
+     * Sets the value of the profitPercent property.
      * 
      * @param value
      *     allowed object is
@@ -646,7 +638,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad unitPrice.
+     * Gets the value of the unitPrice property.
      * 
      * @return
      *     possible object is
@@ -658,7 +650,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad unitPrice.
+     * Sets the value of the unitPrice property.
      * 
      * @param value
      *     allowed object is
@@ -670,7 +662,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad inventoryPostingGroup.
+     * Gets the value of the inventoryPostingGroup property.
      * 
      * @return
      *     possible object is
@@ -682,7 +674,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad inventoryPostingGroup.
+     * Sets the value of the inventoryPostingGroup property.
      * 
      * @param value
      *     allowed object is
@@ -694,7 +686,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad genProdPostingGroup.
+     * Gets the value of the genProdPostingGroup property.
      * 
      * @return
      *     possible object is
@@ -706,7 +698,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad genProdPostingGroup.
+     * Sets the value of the genProdPostingGroup property.
      * 
      * @param value
      *     allowed object is
@@ -718,7 +710,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad vatProdPostingGroup.
+     * Gets the value of the vatProdPostingGroup property.
      * 
      * @return
      *     possible object is
@@ -730,7 +722,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad vatProdPostingGroup.
+     * Sets the value of the vatProdPostingGroup property.
      * 
      * @param value
      *     allowed object is
@@ -742,7 +734,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad itemDiscGroup.
+     * Gets the value of the itemDiscGroup property.
      * 
      * @return
      *     possible object is
@@ -754,7 +746,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad itemDiscGroup.
+     * Sets the value of the itemDiscGroup property.
      * 
      * @param value
      *     allowed object is
@@ -766,7 +758,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad vendorNo.
+     * Gets the value of the vendorNo property.
      * 
      * @return
      *     possible object is
@@ -778,7 +770,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad vendorNo.
+     * Sets the value of the vendorNo property.
      * 
      * @param value
      *     allowed object is
@@ -790,7 +782,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad vendorItemNo.
+     * Gets the value of the vendorItemNo property.
      * 
      * @return
      *     possible object is
@@ -802,7 +794,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad vendorItemNo.
+     * Sets the value of the vendorItemNo property.
      * 
      * @param value
      *     allowed object is
@@ -814,7 +806,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad tariffNo.
+     * Gets the value of the tariffNo property.
      * 
      * @return
      *     possible object is
@@ -826,7 +818,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad tariffNo.
+     * Sets the value of the tariffNo property.
      * 
      * @param value
      *     allowed object is
@@ -838,7 +830,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad searchDescription.
+     * Gets the value of the searchDescription property.
      * 
      * @return
      *     possible object is
@@ -850,7 +842,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad searchDescription.
+     * Sets the value of the searchDescription property.
      * 
      * @param value
      *     allowed object is
@@ -862,7 +854,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad overheadRate.
+     * Gets the value of the overheadRate property.
      * 
      * @return
      *     possible object is
@@ -874,7 +866,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad overheadRate.
+     * Sets the value of the overheadRate property.
      * 
      * @param value
      *     allowed object is
@@ -886,7 +878,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad indirectCostPercent.
+     * Gets the value of the indirectCostPercent property.
      * 
      * @return
      *     possible object is
@@ -898,7 +890,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad indirectCostPercent.
+     * Sets the value of the indirectCostPercent property.
      * 
      * @param value
      *     allowed object is
@@ -910,7 +902,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad itemCategoryCode.
+     * Gets the value of the itemCategoryCode property.
      * 
      * @return
      *     possible object is
@@ -922,7 +914,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad itemCategoryCode.
+     * Sets the value of the itemCategoryCode property.
      * 
      * @param value
      *     allowed object is
@@ -934,7 +926,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad productGroupCode.
+     * Gets the value of the productGroupCode property.
      * 
      * @return
      *     possible object is
@@ -946,7 +938,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad productGroupCode.
+     * Sets the value of the productGroupCode property.
      * 
      * @param value
      *     allowed object is
@@ -958,7 +950,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad blocked.
+     * Gets the value of the blocked property.
      * 
      * @return
      *     possible object is
@@ -970,7 +962,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad blocked.
+     * Sets the value of the blocked property.
      * 
      * @param value
      *     allowed object is
@@ -982,7 +974,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad lastDateModified.
+     * Gets the value of the lastDateModified property.
      * 
      * @return
      *     possible object is
@@ -994,7 +986,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad lastDateModified.
+     * Sets the value of the lastDateModified property.
      * 
      * @param value
      *     allowed object is
@@ -1006,7 +998,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad salesUnitOfMeasure.
+     * Gets the value of the salesUnitOfMeasure property.
      * 
      * @return
      *     possible object is
@@ -1018,7 +1010,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad salesUnitOfMeasure.
+     * Sets the value of the salesUnitOfMeasure property.
      * 
      * @param value
      *     allowed object is
@@ -1030,7 +1022,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad replenishmentSystem.
+     * Gets the value of the replenishmentSystem property.
      * 
      * @return
      *     possible object is
@@ -1042,7 +1034,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad replenishmentSystem.
+     * Sets the value of the replenishmentSystem property.
      * 
      * @param value
      *     allowed object is
@@ -1054,7 +1046,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad purchUnitOfMeasure.
+     * Gets the value of the purchUnitOfMeasure property.
      * 
      * @return
      *     possible object is
@@ -1066,7 +1058,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad purchUnitOfMeasure.
+     * Sets the value of the purchUnitOfMeasure property.
      * 
      * @param value
      *     allowed object is
@@ -1078,7 +1070,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad leadTimeCalculation.
+     * Gets the value of the leadTimeCalculation property.
      * 
      * @return
      *     possible object is
@@ -1090,7 +1082,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad leadTimeCalculation.
+     * Sets the value of the leadTimeCalculation property.
      * 
      * @param value
      *     allowed object is
@@ -1102,7 +1094,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad manufacturingPolicy.
+     * Gets the value of the manufacturingPolicy property.
      * 
      * @return
      *     possible object is
@@ -1114,7 +1106,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad manufacturingPolicy.
+     * Sets the value of the manufacturingPolicy property.
      * 
      * @param value
      *     allowed object is
@@ -1126,7 +1118,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad flushingMethod.
+     * Gets the value of the flushingMethod property.
      * 
      * @return
      *     possible object is
@@ -1138,7 +1130,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad flushingMethod.
+     * Sets the value of the flushingMethod property.
      * 
      * @param value
      *     allowed object is
@@ -1150,55 +1142,7 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad qtyOnPurchOrder.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getQtyOnPurchOrder() {
-        return qtyOnPurchOrder;
-    }
-
-    /**
-     * Define el valor de la propiedad qtyOnPurchOrder.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setQtyOnPurchOrder(BigDecimal value) {
-        this.qtyOnPurchOrder = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad inventory.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getInventory() {
-        return inventory;
-    }
-
-    /**
-     * Define el valor de la propiedad inventory.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setInventory(BigDecimal value) {
-        this.inventory = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad qtyOnSalesOrder.
+     * Gets the value of the qtyOnSalesOrder property.
      * 
      * @return
      *     possible object is
@@ -1210,7 +1154,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad qtyOnSalesOrder.
+     * Sets the value of the qtyOnSalesOrder property.
      * 
      * @param value
      *     allowed object is
@@ -1222,31 +1166,55 @@ public class Product {
     }
 
     /**
-     * Obtiene el valor de la propiedad numUnidades.
+     * Gets the value of the qtyOnPurchOrder property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
      */
-    public String getNumUnidades() {
-        return numUnidades;
+    public BigDecimal getQtyOnPurchOrder() {
+        return qtyOnPurchOrder;
     }
 
     /**
-     * Define el valor de la propiedad numUnidades.
+     * Sets the value of the qtyOnPurchOrder property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
      */
-    public void setNumUnidades(String value) {
-        this.numUnidades = value;
+    public void setQtyOnPurchOrder(BigDecimal value) {
+        this.qtyOnPurchOrder = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad itemTrackingCode.
+     * Gets the value of the inventory property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getInventory() {
+        return inventory;
+    }
+
+    /**
+     * Sets the value of the inventory property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setInventory(BigDecimal value) {
+        this.inventory = value;
+    }
+
+    /**
+     * Gets the value of the itemTrackingCode property.
      * 
      * @return
      *     possible object is
@@ -1258,7 +1226,7 @@ public class Product {
     }
 
     /**
-     * Define el valor de la propiedad itemTrackingCode.
+     * Sets the value of the itemTrackingCode property.
      * 
      * @param value
      *     allowed object is

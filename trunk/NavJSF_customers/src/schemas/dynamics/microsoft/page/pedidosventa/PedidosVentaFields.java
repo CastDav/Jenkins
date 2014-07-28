@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para PedidosVenta_Fields.
+ * <p>Java class for PedidosVenta_Fields.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
  * &lt;simpleType name="PedidosVenta_Fields">
@@ -38,6 +38,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Responsibility_Center"/>
  *     &lt;enumeration value="Assigned_User_ID"/>
  *     &lt;enumeration value="Status"/>
+ *     &lt;enumeration value="DocumentType"/>
  *     &lt;enumeration value="Bill_to_Customer_No"/>
  *     &lt;enumeration value="Bill_to_Contact_No"/>
  *     &lt;enumeration value="Bill_to_Name"/>
@@ -155,6 +156,8 @@ public enum PedidosVentaFields {
     ASSIGNED_USER_ID("Assigned_User_ID"),
     @XmlEnumValue("Status")
     STATUS("Status"),
+    @XmlEnumValue("DocumentType")
+    DOCUMENT_TYPE("DocumentType"),
     @XmlEnumValue("Bill_to_Customer_No")
     BILL_TO_CUSTOMER_NO("Bill_to_Customer_No"),
     @XmlEnumValue("Bill_to_Contact_No")

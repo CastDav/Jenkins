@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -38,7 +38,7 @@ public class DeleteResult {
     protected boolean deleteResult;
 
     /**
-     * Obtiene el valor de la propiedad deleteResult.
+     * Gets the value of the deleteResult property.
      * 
      */
     public boolean isDeleteResult() {
@@ -46,7 +46,7 @@ public class DeleteResult {
     }
 
     /**
-     * Define el valor de la propiedad deleteResult.
+     * Sets the value of the deleteResult property.
      * 
      */
     public void setDeleteResult(boolean value) {

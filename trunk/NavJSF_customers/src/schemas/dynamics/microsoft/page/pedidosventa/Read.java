@@ -9,15 +9,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="DocumentType" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="No" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -29,16 +30,43 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
+    "documentType",
     "no"
 })
 @XmlRootElement(name = "Read")
 public class Read {
 
+    @XmlElement(name = "DocumentType", required = true)
+    protected String documentType;
     @XmlElement(name = "No", required = true)
     protected String no;
 
     /**
-     * Obtiene el valor de la propiedad no.
+     * Gets the value of the documentType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDocumentType() {
+        return documentType;
+    }
+
+    /**
+     * Sets the value of the documentType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDocumentType(String value) {
+        this.documentType = value;
+    }
+
+    /**
+     * Gets the value of the no property.
      * 
      * @return
      *     possible object is
@@ -50,7 +78,7 @@ public class Read {
     }
 
     /**
-     * Define el valor de la propiedad no.
+     * Sets the value of the no property.
      * 
      * @param value
      *     allowed object is

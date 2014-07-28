@@ -138,8 +138,17 @@
 		</navigation-case>
 	</navigation-rule>
 
+<!-- Navigation rules ListaProducto Cliente -->
+	<navigation-rule>
+      <from-view-id>/listProductos.jsp</from-view-id>
+      <navigation-case>
+         <from-outcome>carrito</from-outcome>
+         <to-view-id>/carrito.jsp</to-view-id>
+      </navigation-case>
+   </navigation-rule>
+   
 
-
+   
 	<!-- Managed beans -->
 	<managed-bean>
 		<description>
@@ -242,6 +251,21 @@
 		<managed-bean-name>modificarClienteBean</managed-bean-name>
 		<managed-bean-class>com.ual.ais.ModificarCliente</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>nuevoPedidoBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.NuevoPedido</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>prodVentaBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.Carrito</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>prodVentBean</managed-bean-name>
+		<managed-bean-class>schemas.dynamics.microsoft.page.pedidosventaproductos.PedidosVentaProductos</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 
 </faces-config>
