@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13536319176290" configfile="/NavJSF_customers/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="listBooks" comment="List of books" x="338" y="178" id="pf13536319283451" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf13536319283452" inlinks="pf13536319283453" path="/listBooks.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="editBook" x="122" y="178" id="pf13536319283454" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13536319283453" inlinks="pf13536319283452" path="/editBook.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="index" x="338" y="1650" id="pf13538827024500" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" outlinks="pf13538827024502 pf13538827024503 pf13997217182040 pf13997217182041" inlinks="pf13538827024505 pf13538827024506 pf14037722206810 pf14037722206811" path="/index.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="sorry" x="122" y="1074" id="pf13538827024518" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf13538827024505" inlinks="pf13538827024502" path="/sorry.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="error" x="122" y="1458" id="pf13538827024519" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf13538827024506" inlinks="pf13538827024503" path="/error.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="listBooks" comment="List of books" x="338" y="178" id="pf13536319283451" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf13536319283452" inlinks="pf13536319283453" path="/listBooks.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="editBook" x="122" y="178" id="pf13536319283454" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf13536319283453" inlinks="pf13536319283452" path="/editBook.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" x="338" y="1650" id="pf13538827024500" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" outlinks="pf13538827024502 pf13538827024503 pf13997217182040 pf13997217182041" inlinks="pf13538827024505 pf13538827024506 pf14037722206810 pf14037722206811" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="sorry" x="122" y="1074" id="pf13538827024518" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf13538827024505" inlinks="pf13538827024502" path="/sorry.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="error" x="122" y="1458" id="pf13538827024519" referenceLink="//@navigationRule.10/@fromViewId|" outlinks="pf13538827024506" inlinks="pf13538827024503" path="/error.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="listCustomers" comment="List of customers" x="122" y="690" id="pf13968911175887" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf13974645250811 pf14045579742814" inlinks="pf14045579742815" path="/listCustomers.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="listPedidosVenta" x="338" y="690" id="pf13974645250800" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13974645250811" path="/listPedidosVenta.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="listProveedores" comment="List of Proveedores" x="122" y="2610" id="pf13978934527166" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13978934527167" path="/listProveedores.jsp"/>
   <nodes xsi:type="pageflow:PFPage" name="listPedidosCompraPorProveedor" x="338" y="2610" id="pf13978934527168" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13978934527167" path="/listPedidosCompraPorProveedor.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="welcomeCliente" x="122" y="1842" id="pf13997217182042" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf14037722206810" inlinks="pf13997217182040" path="/welcomeCliente.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="welcomeComercial" x="122" y="2226" id="pf13997217182043" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf14037722206811" inlinks="pf13997217182041" path="/welcomeComercial.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="nuevoCliente" comment="Nuevo Cliente" x="122" y="2994" id="pf14037722206822" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf14037722206823" path="/nuevoCliente.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="welcomComercial" x="338" y="3186" id="pf14037722206824" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" inlinks="pf14037722206823 pf14045579400842" path="/welcomComercial.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="modificarCliente" comment="Editar Cliente" x="122" y="3378" id="pf14045579400843" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14045579400842 pf14045579742815" inlinks="pf14045579742814" path="/modificarCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeCliente" x="122" y="1842" id="pf13997217182042" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf14037722206810" inlinks="pf13997217182040" path="/welcomeCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeComercial" x="122" y="2226" id="pf13997217182043" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf14037722206811" inlinks="pf13997217182041" path="/welcomeComercial.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="nuevoCliente" comment="Nuevo Cliente" x="122" y="2994" id="pf14037722206822" referenceLink="//@navigationRule.11/@fromViewId|" outlinks="pf14037722206823" path="/nuevoCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomComercial" x="338" y="3186" id="pf14037722206824" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" inlinks="pf14037722206823 pf14045579400842" path="/welcomComercial.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="modificarCliente" comment="Volver de modificar" x="122" y="3378" id="pf14045579400843" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf14045579400842 pf14045579742815" inlinks="pf14045579742814" path="/modificarCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="listProductos" id="pf14065637464818" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf14065637464819" path="/listProductos.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="carrito" x="201" id="pf140656374648110" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" inlinks="pf14065637464819" path="/carrito.jsp"/>
   <links id="pf13536319283452" target="pf13536319283454" source="pf13536319283451" outcome="editBook"/>
   <links id="pf13536319283453" target="pf13536319283451" source="pf13536319283454" outcome="listBooks" redirect="true"/>
   <links id="pf13538827024502" target="pf13538827024518" source="pf13538827024500" outcome="loginFailure"/>
@@ -30,4 +32,5 @@
   <links id="pf14045579400842" target="pf14037722206824" source="pf14045579400843" outcome="welcomeComercial"/>
   <links id="pf14045579742814" target="pf14045579400843" source="pf13968911175887" outcome="modificarCliente"/>
   <links id="pf14045579742815" target="pf13968911175887" source="pf14045579400843" outcome="listCustomers"/>
+  <links id="pf14065637464819" target="pf140656374648110" source="pf14065637464818" outcome="carrito"/>
 </pageflow:Pageflow>

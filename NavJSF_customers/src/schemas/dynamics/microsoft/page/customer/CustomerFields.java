@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para Customer_Fields.
+ * <p>Java class for Customer_Fields.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
  * &lt;simpleType name="Customer_Fields">
@@ -47,8 +47,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="salesLCY"/>
  *     &lt;enumeration value="address"/>
  *     &lt;enumeration value="creditAmount"/>
- *     &lt;enumeration value="eMail"/>
  *     &lt;enumeration value="city"/>
+ *     &lt;enumeration value="eMail"/>
  *     &lt;enumeration value="Base_Calendar_Code"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -125,10 +125,10 @@ public enum CustomerFields {
     ADDRESS("address"),
     @XmlEnumValue("creditAmount")
     CREDIT_AMOUNT("creditAmount"),
-    @XmlEnumValue("eMail")
-    E_MAIL("eMail"),
     @XmlEnumValue("city")
     CITY("city"),
+    @XmlEnumValue("eMail")
+    E_MAIL("eMail"),
     @XmlEnumValue("Base_Calendar_Code")
     BASE_CALENDAR_CODE("Base_Calendar_Code");
     private final String value;

@@ -40,7 +40,7 @@
 			
 			<!-- begin navigation -->
 				<!-- MENU CLIENTE-->
-			<nav id="navigation">
+			<nav id="navigationCliente">
 				<ul>
 					<li><a href="#">Inicio</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista De Productos</a></li>

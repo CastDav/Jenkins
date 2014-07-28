@@ -4,14 +4,13 @@ package schemas.dynamics.microsoft.page.pedidosventa;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para PedidosVenta_Filter complex type.
+ * <p>Java class for PedidosVenta_Filter complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="PedidosVenta_Filter">
@@ -36,13 +35,12 @@ import javax.xml.bind.annotation.XmlType;
 public class PedidosVentaFilter {
 
     @XmlElement(name = "Field", required = true)
-    @XmlSchemaType(name = "string")
     protected PedidosVentaFields field;
     @XmlElement(name = "Criteria", required = true)
     protected String criteria;
 
     /**
-     * Obtiene el valor de la propiedad field.
+     * Gets the value of the field property.
      * 
      * @return
      *     possible object is
@@ -54,7 +52,7 @@ public class PedidosVentaFilter {
     }
 
     /**
-     * Define el valor de la propiedad field.
+     * Sets the value of the field property.
      * 
      * @param value
      *     allowed object is
@@ -66,7 +64,7 @@ public class PedidosVentaFilter {
     }
 
     /**
-     * Obtiene el valor de la propiedad criteria.
+     * Gets the value of the criteria property.
      * 
      * @return
      *     possible object is
@@ -78,7 +76,7 @@ public class PedidosVentaFilter {
     }
 
     /**
-     * Define el valor de la propiedad criteria.
+     * Sets the value of the criteria property.
      * 
      * @param value
      *     allowed object is

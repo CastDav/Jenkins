@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para Product_Fields.
+ * <p>Java class for Product_Fields.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
  * &lt;simpleType name="Product_Fields">
@@ -52,10 +52,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Lead_Time_Calculation"/>
  *     &lt;enumeration value="Manufacturing_Policy"/>
  *     &lt;enumeration value="Flushing_Method"/>
+ *     &lt;enumeration value="qtyOnSalesOrder"/>
  *     &lt;enumeration value="qtyOnPurchOrder"/>
  *     &lt;enumeration value="Inventory"/>
- *     &lt;enumeration value="qtyOnSalesOrder"/>
- *     &lt;enumeration value="numUnidades"/>
  *     &lt;enumeration value="Item_Tracking_Code"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -142,14 +141,12 @@ public enum ProductFields {
     MANUFACTURING_POLICY("Manufacturing_Policy"),
     @XmlEnumValue("Flushing_Method")
     FLUSHING_METHOD("Flushing_Method"),
+    @XmlEnumValue("qtyOnSalesOrder")
+    QTY_ON_SALES_ORDER("qtyOnSalesOrder"),
     @XmlEnumValue("qtyOnPurchOrder")
     QTY_ON_PURCH_ORDER("qtyOnPurchOrder"),
     @XmlEnumValue("Inventory")
     INVENTORY("Inventory"),
-    @XmlEnumValue("qtyOnSalesOrder")
-    QTY_ON_SALES_ORDER("qtyOnSalesOrder"),
-    @XmlEnumValue("numUnidades")
-    NUM_UNIDADES("numUnidades"),
     @XmlEnumValue("Item_Tracking_Code")
     ITEM_TRACKING_CODE("Item_Tracking_Code");
     private final String value;
