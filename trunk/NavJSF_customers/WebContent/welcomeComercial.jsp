@@ -37,18 +37,18 @@
 		</h:form>
 
 
-					<!-- MENU COMERCIAL-->
-			<nav id="navigationComercial">
+<!-- begin navigation -->
+			
+						<nav id="navigationComercial">
 				<ul>
-					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Inicio </a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/consularPedidos.jsf">Consultar pedidos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
-				</ul>
-	
+					</ul>
+			
 			</nav>
-	<!-- end navigation -->
+			<!-- end navigation -->
 
 		</div>
 	</body>

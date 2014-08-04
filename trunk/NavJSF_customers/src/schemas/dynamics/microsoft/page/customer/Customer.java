@@ -51,11 +51,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="Reserve" type="{urn:microsoft-dynamics-schemas/page/customer}Reserve" minOccurs="0"/>
  *         &lt;element name="Shipping_Advice" type="{urn:microsoft-dynamics-schemas/page/customer}Shipping_Advice" minOccurs="0"/>
  *         &lt;element name="Shipping_Agent_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="salesLCY" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="creditAmount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="eMail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="creditAmount" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="salesLCY" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="Base_Calendar_Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -98,11 +98,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "reserve",
     "shippingAdvice",
     "shippingAgentCode",
-    "salesLCY",
-    "address",
-    "creditAmount",
     "city",
     "eMail",
+    "creditAmount",
+    "address",
+    "salesLCY",
     "baseCalendarCode"
 })
 public class Customer {
@@ -170,11 +170,11 @@ public class Customer {
     protected ShippingAdvice shippingAdvice;
     @XmlElement(name = "Shipping_Agent_Code")
     protected String shippingAgentCode;
-    protected BigDecimal salesLCY;
-    protected String address;
-    protected BigDecimal creditAmount;
     protected String city;
     protected String eMail;
+    protected BigDecimal creditAmount;
+    protected String address;
+    protected BigDecimal salesLCY;
     @XmlElement(name = "Base_Calendar_Code")
     protected String baseCalendarCode;
 
@@ -923,78 +923,6 @@ public class Customer {
     }
 
     /**
-     * Gets the value of the salesLCY property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getSalesLCY() {
-        return salesLCY;
-    }
-
-    /**
-     * Sets the value of the salesLCY property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setSalesLCY(BigDecimal value) {
-        this.salesLCY = value;
-    }
-
-    /**
-     * Gets the value of the address property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAddress() {
-        return address;
-    }
-
-    /**
-     * Sets the value of the address property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAddress(String value) {
-        this.address = value;
-    }
-
-    /**
-     * Gets the value of the creditAmount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getCreditAmount() {
-        return creditAmount;
-    }
-
-    /**
-     * Sets the value of the creditAmount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setCreditAmount(BigDecimal value) {
-        this.creditAmount = value;
-    }
-
-    /**
      * Gets the value of the city property.
      * 
      * @return
@@ -1040,6 +968,78 @@ public class Customer {
      */
     public void setEMail(String value) {
         this.eMail = value;
+    }
+
+    /**
+     * Gets the value of the creditAmount property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getCreditAmount() {
+        return creditAmount;
+    }
+
+    /**
+     * Sets the value of the creditAmount property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setCreditAmount(BigDecimal value) {
+        this.creditAmount = value;
+    }
+
+    /**
+     * Gets the value of the address property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * Sets the value of the address property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAddress(String value) {
+        this.address = value;
+    }
+
+    /**
+     * Gets the value of the salesLCY property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getSalesLCY() {
+        return salesLCY;
+    }
+
+    /**
+     * Sets the value of the salesLCY property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setSalesLCY(BigDecimal value) {
+        this.salesLCY = value;
     }
 
     /**

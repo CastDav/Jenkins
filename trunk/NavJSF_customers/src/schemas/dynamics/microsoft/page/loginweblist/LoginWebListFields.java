@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="username"/>
  *     &lt;enumeration value="password"/>
  *     &lt;enumeration value="role"/>
+ *     &lt;enumeration value="clienteNo"/>
  *     &lt;enumeration value="name"/>
- *     &lt;enumeration value="numero"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -37,10 +37,10 @@ public enum LoginWebListFields {
     PASSWORD("password"),
     @XmlEnumValue("role")
     ROLE("role"),
+    @XmlEnumValue("clienteNo")
+    CLIENTE_NO("clienteNo"),
     @XmlEnumValue("name")
-    NAME("name"),
-    @XmlEnumValue("numero")
-    NUMERO("numero");
+    NAME("name");
     private final String value;
 
     LoginWebListFields(String v) {

@@ -94,6 +94,7 @@ pedidosventaproductos=null;
 public void setCliente(ActionEvent event){
 UIParameter component = (UIParameter) event.getComponent().findComponent("clienteIds");
 numeroCliente=component.getValue().toString();
+System.out.println("Cliente numero: "+ numeroCliente);
 }
 public int comprobarStock(){
 if(pedidosventaproductos.size()==0){
@@ -199,6 +200,7 @@ return false;
 }
 public void guardarPedido(){	
 try { 
+	
 String baseURL = "http://localhost:7047/DynamicsNAV/WS/";
  	 URL systemServiceURL = new URL(baseURL + "SystemService"); 
  	 QName systemServiceQName = new QName("urn:microsoft-dynamics-schemas/nav/system/", "SystemService"); 
@@ -207,8 +209,8 @@ String baseURL = "http://localhost:7047/DynamicsNAV/WS/";
  	 List<String> companies = systemPort.companies(); 
  	 
  	 String cur = companies.get(0); 
- 	 URL pedidosventaPageURL = new URL(baseURL+URLEncoder.encode(cur,"UTF-8").replace("+","%20")+"/Page/Pedidosventa"); 
- 	 QName pedidosventaPageQName = new QName("urn:microsoft-dynamics-schemas/page/pedidosventa", "Pedidosventa_Service"); 
+ 	 URL pedidosventaPageURL = new URL(baseURL+URLEncoder.encode(cur,"UTF-8").replace("+","%20")+"/Page/PedidosVenta"); 
+ 	 QName pedidosventaPageQName = new QName("urn:microsoft-dynamics-schemas/page/pedidosventa", "PedidosVenta_Service"); 
 
  	 PedidosVentaService pedidosventaService = new  PedidosVentaService(pedidosventaPageURL, pedidosventaPageQName); 
  	 PedidosVentaPort pedidosventaPort = pedidosventaService.getPedidosVentaPort();
@@ -229,6 +231,7 @@ String baseURL = "http://localhost:7047/DynamicsNAV/WS/";
  
 PedidosVenta pedids=new PedidosVenta();
 pedids.setSellToCustomerNo(numeroCliente);
+
 pedids.setDocumentType(schemas.dynamics.microsoft.page.pedidosventa.DocumentType.ORDER);
 Holder<PedidosVenta> hce = new Holder<PedidosVenta>(pedids); 
 pedidosventaPort.create(hce);	
@@ -236,10 +239,11 @@ pedidosventaPort.create(hce);
  
 int linea=10000;
  for(PedidosVentaProductos prod: pedidosventaproductos){
- //prod.setSellToCustomerNo(numeroCliente);
+ prod.setSellToCustomerNo(numeroCliente);
  prod.setLineNo(linea);
  prod.setDocumentNo(siguiente);
  prod.setType(Type.ITEM);
+
  Holder<PedidosVentaProductos> hcee = new Holder<PedidosVentaProductos>(prod); 
  pedidosventaproductosPort.create(hcee);
  linea+=10000;

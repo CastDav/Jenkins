@@ -38,25 +38,24 @@
 		</h:form>
 
 		<header>
-				<!-- MENU COMERCIAL-->
-			<nav id="navigation">
+<!-- begin navigation -->
+			
+						<nav id="navigationComercial">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Consultar productos</a></li>
+					<li><a href="#">Inicio </a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/consularPedidos.jsf">Consultar pedidos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/modificarCliente.jsf">Modificar cliente</a></li>
-				</ul>
-	
+					</ul>
+			
 			</nav>
-	<!-- end navigation -->
+			<!-- end navigation -->
 			<!-- end navigation -->
 			</header>
 		<div class="cuerpo">
 		<h:form id="formCliente">
 		<h:inputHidden id="id" value="#{modificarClienteBean.customers.name}"/>
-		<h:panelGrid columns="2" border="1">
+		<h:panelGrid columns="2" border="0">
 			
 			<h:outputText value="Nombre:" />
 			<h:inputText id="name" 

@@ -1,41 +1,41 @@
 <project default="wsimport">
 	<target name="wsimport">
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/Customer" />
 		</exec>
 
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/Proveedor" />
 		</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 					<arg line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/PedidosVentaProductos" />
 				</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/Product" />
 		</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg
 				line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/PedidosVenta" />
 		</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg
 				line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/PedidosVenta" />
 		</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg
 				line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/PedidosCompra" />
 		</exec>
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg
 				line="-s ./src http://localhost:7047/DynamicsNAV/WS/Page/LoginWebList" />
 		</exec>
 
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 					<arg
 						line="-s ./src http://localhost:7047/DynamicsNAV/WS/Codeunit/serieNextId" />
 				</exec>
 
-		<exec executable="C:/Program Files/Java/jdk1.7.0_21/bin/wsimport">
+		<exec executable="C:/Program Files/Java/jdk1.7.0_03/bin/wsimport">
 			<arg line="-s ./src http://localhost:7047/DynamicsNAV/WS/SystemService" />
 		</exec>
 	</target>
