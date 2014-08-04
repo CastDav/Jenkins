@@ -9,9 +9,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
 <base href="<%=basePath%>">
-
+<f:loadBundle basename="com.ual.ais.messages" var="msgs" />
 <title>List of Customers</title>
 </head>
 <!-- begin CSS -->
@@ -19,41 +20,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!-- end CSS -->
 <body>
+
 	
-		<div id="container"> <!--  div cabecera -->
+		<div id="container">
+	
 			<header>
+		
 			<!-- begin navigation -->
 			
-			<nav id="navigation">
+						<nav id="navigationComercial">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a
-						href="listCustomers.jsf">Lista
-							De Clientes</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista
-							De Productos</a></li>
-							
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProveedores.jsf">Lista
-							De Proveedores</a></li>
-					
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosCompra.jsf">Lista
-							De Pedidos Compra</a></li>
-					
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
-							De Pedidos Ventas Abiertos</a></li>
-
-				</ul>
+					<li><a href="#">Inicio </a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
+					</ul>
 			
 			</nav>
 			<!-- end navigation -->
 		 </header><!-- div cabecera -->
 	
 	<div class="cuerpo"><!-- inicio cuerpo -->
-	<f:view>
+
+<f:view>
 
 		<h:form id="customerList">
 			<h:dataTable id="customers" value="#{customerListBean.customers}"
@@ -163,4 +152,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div> <!-- end cuerpo -->
 </div>	<!-- end container -->
 </body>
+
 </html>

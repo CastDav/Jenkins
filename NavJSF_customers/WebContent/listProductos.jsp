@@ -10,8 +10,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+<f:loadBundle basename="com.ual.ais.messages" var="msgs" />
 <link href="css/style.css" type="text/css" rel="stylesheet">
-
+<!-- begin JS -->
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/modernizr-2.0.6.min.js" type="text/javascript"></script>
+<!-- end JS -->
 <base href="<%=basePath%>">
 
 </head>
@@ -22,7 +26,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <f:view>
 
 <h:form>
-<h:form>
 			<p>
 				<h:outputText value="#{msgs.welcome}" />
 				<h:outputText value="#{user.name}" />
@@ -30,10 +33,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<h:outputText value="#{user.contact}" />
 				] (<i><h:outputText value="#{user.role}" /></i>)
 			</p>
-			<p>
+	
+				<p>
 				<h:commandButton value="#{msgs.logout}" action="#{user.logout}" />
+		
 			</p>
 		</h:form>
+<h:form>
 
 <nav id="navigationCliente">
 				<ul>
@@ -48,6 +54,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 </br>
+<h:commandButton id="botCarr" action="carrito" value="Ver Carrito" actionListener="#{prodVentaBean.setCliente}">
+<f:param id="clienteIds" 
+   	name="id" 
+   	value="#{user.clienteNo}" />
+</h:commandButton>
        
 <h:dataTable id="productoss" 
 value="#{nuevoPedidoBean.productos}" 
@@ -74,7 +85,7 @@ var="productos" >
    <f:facet name="header">
     <h:outputText  value="Unidades a añadir"/>    
    </f:facet>
-   <h:inputText id="numUnidades" value="#{productos.numUnidades}" />
+   <h:inputText disabled="true" id="numUnidades" value="#{productos.numUnidades}" />
  </h:column>
  <h:column>
  <h:commandLink id="listListCarrito"

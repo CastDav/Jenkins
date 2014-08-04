@@ -22,29 +22,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 		<div id="container"> <!--  div cabecera -->
 			<header>
+			
+
 			<!-- begin navigation -->
-			<nav id="navigation">
+			
+						<nav id="navigationComercial">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a
-						href="listCustomers.jsf">Lista
-							De Clientes</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista
-							De Productos</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listProveedores.jsf">Lista
-							De Proveedores</a></li>
-					<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosCompra.jsf">Lista
-							De Pedidos Compra</a></li>
-
-							<li><a
-						href="http://localhost:8080/NavJSF_customers/listPedidosVentaAbierto.jsf">Lista
-							De Pedidos Ventas Abiertos</a></li>
-
-
-				</ul>
+					<li><a href="#">Inicio </a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
+					</ul>
 			
 			</nav>
 			<!-- end navigation -->

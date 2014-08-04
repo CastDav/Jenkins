@@ -12,17 +12,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-
+<f:loadBundle basename="com.ual.ais.messages" var="msgs" />
 <base href="<%=basePath%>">
 
 <title>Carrito </title>
 </head>
   
 <body>
-</br>
+<div id="container">
 <f:view>
         
 <h:form>
+
+<h:form>
+			
+				<h:outputText value="#{msgs.welcome}" />
+				<h:outputText value="#{user.name}" />
+				! [
+				<h:outputText value="#{user.contact}" />
+				] (<i><h:outputText value="#{user.role}" /></i>)
+			
+			<p>
+				<h:commandButton value="#{msgs.logout}" action="#{user.logout}" />
+			</p>
+		</h:form>
 
 	<nav id="navigationCliente">
 				<ul>
@@ -35,11 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 </nav>
 <h:dataTable id="productosventa" 
 value="#{prodVentaBean.pedidosVentaProductos}" 
-var="producto" 
-styleClass="order-table"
-    headerClass="order-table-header"
-    rowClasses="order-table-odd-row,order-table-even-row"
-    cellpadding="10">   
+var="producto">   
  <h:column>
    <f:facet name="header">
     <h:outputText  value="Nº"/>
@@ -94,6 +103,7 @@ styleClass="order-table"
   	<f:actionListener binding="#{nuevoPedidoBean.borrarUnidades()}"/>
 	</h:commandButton>
 		</h:form>
+		</div>
 		</f:view>
 	</body>
 </html>

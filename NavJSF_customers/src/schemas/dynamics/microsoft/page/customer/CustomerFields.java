@@ -44,11 +44,11 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Reserve"/>
  *     &lt;enumeration value="Shipping_Advice"/>
  *     &lt;enumeration value="Shipping_Agent_Code"/>
- *     &lt;enumeration value="salesLCY"/>
- *     &lt;enumeration value="address"/>
- *     &lt;enumeration value="creditAmount"/>
  *     &lt;enumeration value="city"/>
  *     &lt;enumeration value="eMail"/>
+ *     &lt;enumeration value="creditAmount"/>
+ *     &lt;enumeration value="address"/>
+ *     &lt;enumeration value="salesLCY"/>
  *     &lt;enumeration value="Base_Calendar_Code"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -119,16 +119,16 @@ public enum CustomerFields {
     SHIPPING_ADVICE("Shipping_Advice"),
     @XmlEnumValue("Shipping_Agent_Code")
     SHIPPING_AGENT_CODE("Shipping_Agent_Code"),
-    @XmlEnumValue("salesLCY")
-    SALES_LCY("salesLCY"),
-    @XmlEnumValue("address")
-    ADDRESS("address"),
-    @XmlEnumValue("creditAmount")
-    CREDIT_AMOUNT("creditAmount"),
     @XmlEnumValue("city")
     CITY("city"),
     @XmlEnumValue("eMail")
     E_MAIL("eMail"),
+    @XmlEnumValue("creditAmount")
+    CREDIT_AMOUNT("creditAmount"),
+    @XmlEnumValue("address")
+    ADDRESS("address"),
+    @XmlEnumValue("salesLCY")
+    SALES_LCY("salesLCY"),
     @XmlEnumValue("Base_Calendar_Code")
     BASE_CALENDAR_CODE("Base_Calendar_Code");
     private final String value;

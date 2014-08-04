@@ -27,13 +27,13 @@ public class UserBean {
 	   private String role;
 	   private String contact;
 	   private String no;
-	   private Integer numero;
+	   private Integer clienteNo;
 
    public String getName() { return name; }
    public void setName(String newValue) { name = newValue; }
-   public Integer getNumero() { 
-	   return numero; }
-   public void setNumero(Integer newValue) { numero = newValue; }
+   public Integer getClienteNo() { 
+	   return clienteNo; }
+   public void setClienteNo(Integer newValue) { clienteNo = newValue; }
    public void setNo(String newValue) { no = newValue; }
 
    public String getPassword() { return password; }
@@ -132,7 +132,7 @@ public String login() {
 		          loggedIn = password.equals(storedPassword.trim());
 		          this.contact = login.getName();
 		          this.role = login.getRole().value();
-		          this.numero = login.getNumero();
+		          this.clienteNo = login.getClienteNo();
 		          this.no = login.getNo();
 		    	  }
 		      }

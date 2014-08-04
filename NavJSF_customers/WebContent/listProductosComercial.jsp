@@ -9,9 +9,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
 <base href="<%=basePath%>">
-
+<f:loadBundle basename="com.ual.ais.messages" var="msgs" />
 <title>Lista de productos</title>
 </head>
 <!-- begin CSS -->
@@ -22,13 +23,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 		<div id="container"> <!--  div cabecera -->
 			<header>
+
+		
 			<!-- begin navigation -->
-			<nav id="navigation">
+						<nav id="navigationComercial">
 				<ul>
-					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Inicio </a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listProductosComercial.jsf">Consultar productos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listCustomers.jsf">Consultar clientes</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/consularPedidos.jsf">Consultar pedidos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/nuevoCliente.jsf">Crear cliente</a></li>
 					</ul>
 			

@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- end CSS -->
 <body>
 	
-		<div id="container"> <!--  div cabecera -->
+		<div id="container">
 			<header>
 			<!-- begin navigation -->
 			<nav id="navigation">
