@@ -71,6 +71,7 @@ if(!yaEstaba){
 PedidosVentaProductos nuevoProducto = new PedidosVentaProductos();
 nuevoProducto.setDescription(component2.getValue().toString());
 nuevoProducto.setNo(component1.getValue().toString());
+System.out.println(component.getValue().toString());
 nuevoProducto.setQuantity(BigDecimal.valueOf(Integer.valueOf(component.getValue().toString())));
 nuevoProducto.setUnitPrice(BigDecimal.valueOf(Integer.valueOf(component3.getValue().toString())));
 pedidosventaproductos.add(nuevoProducto);
@@ -108,7 +109,7 @@ try{
  
  String cur = companies.get(0); 
  URL productosPageURL = new URL(baseURL+URLEncoder.encode(cur,"UTF-8").replace("+","%20")+"/Page/Product"); 
- QName productosPageQName = new QName("urn:microsoft-dynamics-schemas/page/productos", "Productos_Service"); 
+ QName productosPageQName = new QName("urn:microsoft-dynamics-schemas/page/product", "Product_Service"); 
 
  
  ProductService productosService = new ProductService(productosPageURL, productosPageQName); 
@@ -159,7 +160,7 @@ try{
  
  String cur = companies.get(0); 
  URL productosPageURL = new URL(baseURL+URLEncoder.encode(cur,"UTF-8").replace("+","%20")+"/Page/Product"); 
- QName productosPageQName = new QName("urn:microsoft-dynamics-schemas/page/productos", "Productos_Service"); 
+ QName productosPageQName = new QName("urn:microsoft-dynamics-schemas/page/product", "Product_Service"); 
 
  
  ProductService productosService = new ProductService(productosPageURL, productosPageQName); 
@@ -242,8 +243,7 @@ int linea=10000;
  Holder<PedidosVentaProductos> hcee = new Holder<PedidosVentaProductos>(prod); 
  pedidosventaproductosPort.create(hcee);
  linea+=10000;
- }
- 
+ } 
  
 }
  	catch (Exception e) {

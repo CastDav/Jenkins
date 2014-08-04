@@ -45,6 +45,14 @@
 		</navigation-case>
 	</navigation-rule>
 
+	<navigation-rule>
+		<description>Carrito</description>
+		<from-view-id>/carrito.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>volver</from-outcome>
+			<to-view-id>/listProductos.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 	<navigation-rule>
 		<description>List of books</description>
@@ -258,14 +266,14 @@
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
-		<managed-bean-name>prodVentaBean</managed-bean-name>
-		<managed-bean-class>com.ual.ais.Carrito</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-	</managed-bean>
-	<managed-bean>
 		<managed-bean-name>prodVentBean</managed-bean-name>
 		<managed-bean-class>schemas.dynamics.microsoft.page.pedidosventaproductos.PedidosVentaProductos</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>prodVentaBean</managed-bean-name>
+		<managed-bean-class>com.ual.ais.Carrito</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 
 </faces-config>

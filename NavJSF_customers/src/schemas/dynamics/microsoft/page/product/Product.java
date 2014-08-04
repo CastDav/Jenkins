@@ -59,6 +59,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="Lead_Time_Calculation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Manufacturing_Policy" type="{urn:microsoft-dynamics-schemas/page/product}Manufacturing_Policy" minOccurs="0"/>
  *         &lt;element name="Flushing_Method" type="{urn:microsoft-dynamics-schemas/page/product}Flushing_Method" minOccurs="0"/>
+ *         &lt;element name="numUnidades" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="qtyOnSalesOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="qtyOnPurchOrder" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="Inventory" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
@@ -112,6 +113,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "leadTimeCalculation",
     "manufacturingPolicy",
     "flushingMethod",
+    "numUnidades",
     "qtyOnSalesOrder",
     "qtyOnPurchOrder",
     "inventory",
@@ -198,6 +200,7 @@ public class Product {
     protected ManufacturingPolicy manufacturingPolicy;
     @XmlElement(name = "Flushing_Method")
     protected FlushingMethod flushingMethod;
+    protected String numUnidades;
     protected BigDecimal qtyOnSalesOrder;
     protected BigDecimal qtyOnPurchOrder;
     @XmlElement(name = "Inventory")
@@ -1139,6 +1142,30 @@ public class Product {
      */
     public void setFlushingMethod(FlushingMethod value) {
         this.flushingMethod = value;
+    }
+
+    /**
+     * Gets the value of the numUnidades property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNumUnidades() {
+        return numUnidades;
+    }
+
+    /**
+     * Sets the value of the numUnidades property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNumUnidades(String value) {
+        this.numUnidades = value;
     }
 
     /**
