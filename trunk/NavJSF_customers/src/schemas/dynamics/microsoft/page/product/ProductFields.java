@@ -52,6 +52,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Lead_Time_Calculation"/>
  *     &lt;enumeration value="Manufacturing_Policy"/>
  *     &lt;enumeration value="Flushing_Method"/>
+ *     &lt;enumeration value="numUnidades"/>
  *     &lt;enumeration value="qtyOnSalesOrder"/>
  *     &lt;enumeration value="qtyOnPurchOrder"/>
  *     &lt;enumeration value="Inventory"/>
@@ -141,6 +142,8 @@ public enum ProductFields {
     MANUFACTURING_POLICY("Manufacturing_Policy"),
     @XmlEnumValue("Flushing_Method")
     FLUSHING_METHOD("Flushing_Method"),
+    @XmlEnumValue("numUnidades")
+    NUM_UNIDADES("numUnidades"),
     @XmlEnumValue("qtyOnSalesOrder")
     QTY_ON_SALES_ORDER("qtyOnSalesOrder"),
     @XmlEnumValue("qtyOnPurchOrder")

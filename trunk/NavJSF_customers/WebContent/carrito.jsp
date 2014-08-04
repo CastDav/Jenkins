@@ -11,11 +11,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="estilo.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
 
 <base href="<%=basePath%>">
 
-<title>Lista de Productos - Práctica 2 - AIS</title>
+<title>Carrito </title>
 </head>
   
 <body>
@@ -23,8 +23,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <f:view>
         
 <h:form>
+
+	<nav id="navigationCliente">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista De Productos</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/carrito.jsf">Carrito</a></li>
+					<li><a href="http://localhost:8080/NavJSF_customers/consultarCompras.jsf">Consultar Compras</a></li>
+				</ul>
+	
+	 </nav>
 <h:dataTable id="productosventa" 
-value="#{prodVentaBean.pedidosventaproductos}" 
+value="#{prodVentaBean.pedidosVentaProductos}" 
 var="producto" 
 styleClass="order-table"
     headerClass="order-table-header"
@@ -79,7 +89,7 @@ styleClass="order-table"
 	actionListener="#{nuevoPedidoBean.borrarUnidades()}"/>
 	<h:commandButton id="botPagar" value="Proceder al Pago" action="salir" onclick="#{prodVentaBean.guardarPedido()}" disabled="#{prodVentaBean.hayStock()}">
 	</h:commandButton>
-	<h:commandButton id="botStock" value="ComprobarStock" onclick="return alert('Si muestra -1, todos los productos tienen stock, sino indica del que faltan unidades \n '+#{prodVentaBean.comprobarStock()})"/>
+	<h:commandButton id="botStock" value="ComprobarStock" onclick="return alert('Si muestra -1, todos los productos tienen stock, sino indica del que faltan unidades \n Respuesta:  '+#{prodVentaBean.comprobarStock()})"/>
 	<h:commandButton id="botCancelar" action="salir" value="Cancelar" actionListener="#{prodVentaBean.salir()}">
   	<f:actionListener binding="#{nuevoPedidoBean.borrarUnidades()}"/>
 	</h:commandButton>

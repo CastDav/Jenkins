@@ -51,7 +51,7 @@ public class LoginWebList {
     protected String password;
     protected Role role;
     protected String name;
-    protected String numero;
+    protected Integer numero;
 
     /**
      * Gets the value of the key property.
@@ -205,7 +205,7 @@ public class LoginWebList {
      *     {@link Integer }
      *     
      */
-    public String getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
@@ -217,7 +217,7 @@ public class LoginWebList {
      *     {@link Integer }
      *     
      */
-    public void setNumero(String value) {
+    public void setNumero(Integer value) {
         this.numero = value;
     }
 

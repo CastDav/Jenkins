@@ -12,7 +12,6 @@
 
 <!-- begin CSS -->
 <link href="css/style.css" type="text/css" rel="stylesheet">
-<link href="css/html5-reset.css" type="text/css" rel="stylesheet">
 <!-- end CSS -->
 
 <!-- begin JS -->
