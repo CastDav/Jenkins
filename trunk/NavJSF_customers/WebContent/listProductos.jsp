@@ -46,7 +46,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li><a href="#">Inicio</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/listProductos.jsf">Lista De Productos</a></li>
 					<li><a href="http://localhost:8080/NavJSF_customers/carrito.jsf">Carrito</a></li>
-					<li><a href="http://localhost:8080/NavJSF_customers/consultarCompras.jsf">Consultar Compras</a></li>
+					
+					<li><h:commandLink id="listPedidosVentaCliente" 
+						 value="Consultar Pedidos Venta"
+		    			   action="listPedidosVentaCliente" 
+		    			   actionListener="#{pedidosVentaListBean.selectCliente}">
+		    			   
+		    	<f:param id="clienteIdss" 
+		    			 name="id" 
+		    			 value="#{user.clienteNo}" />
+		    	</h:commandLink>
 					
 				</ul>
 	

@@ -49,6 +49,10 @@
 		<description>Carrito</description>
 		<from-view-id>/carrito.jsp</from-view-id>
 		<navigation-case>
+			<from-outcome>listPedidosVentaCliente</from-outcome>
+			<to-view-id>/listPedidosVentaCliente2.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
 			<from-outcome>volver</from-outcome>
 			<to-view-id>/listProductos.jsp</to-view-id>
 		</navigation-case>
@@ -95,6 +99,10 @@
    
    <navigation-rule>
       <from-view-id>/welcomeCliente.jsp</from-view-id>
+      <navigation-case>
+			<from-outcome>listPedidosVentaCliente</from-outcome>
+			<to-view-id>/listPedidosVentaCliente2.jsp</to-view-id>
+		</navigation-case>
       <navigation-case>
          <from-outcome>login</from-outcome>
          <to-view-id>/index.jsp</to-view-id>
@@ -149,6 +157,10 @@
 <!-- Navigation rules ListaProducto Cliente -->
 	<navigation-rule>
       <from-view-id>/listProductos.jsp</from-view-id>
+      <navigation-case>
+			<from-outcome>listPedidosVentaCliente</from-outcome>
+			<to-view-id>/listPedidosVentaCliente2.jsp</to-view-id>
+		</navigation-case>
       <navigation-case>
          <from-outcome>carrito</from-outcome>
          <to-view-id>/carrito.jsp</to-view-id>
